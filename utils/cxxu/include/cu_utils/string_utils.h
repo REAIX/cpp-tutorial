@@ -13,6 +13,9 @@
 
 #include "cu_utils/export.h"
 
+// 注意：CXXU_API 不是 C++ 关键字，而是 export.h 中定义的跨平台导出宏。
+// 它用于控制动态库符号的可见性，静态链接时展开为空。
+
 #include <string>
 #include <vector>
 
