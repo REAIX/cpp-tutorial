@@ -1,0 +1,4 @@
+add_executable(cpp_ch00_01_deep_dive_cpp_philosophy 01_deep_dive_cpp_philosophy.cpp)
+add_executable(cpp_ch00_01_example_hello_cpp 01_example_hello_cpp.cpp)
+add_executable(cpp_ch00_02_deep_dive_cpp_ecosystem 02_deep_dive_cpp_ecosystem.cpp)
+add_executable(cpp_ch00_02_example_c_vs_cpp 02_example_c_vs_cpp.cpp)

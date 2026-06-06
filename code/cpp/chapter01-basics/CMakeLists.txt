@@ -1,0 +1,5 @@
+add_executable(cpp_ch01_01_deep_dive_reference_advanced 01_deep_dive_reference_advanced.cpp)
+add_executable(cpp_ch01_01_example_reference 01_example_reference.cpp)
+add_executable(cpp_ch01_02_deep_dive_init_modes 02_deep_dive_init_modes.cpp)
+add_executable(cpp_ch01_02_example_auto_type 02_example_auto_type.cpp)
+add_executable(cpp_ch01_03_example_new_delete 03_example_new_delete.cpp)

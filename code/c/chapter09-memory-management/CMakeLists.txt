@@ -1,0 +1,5 @@
+add_executable(c_ch09_01_example_malloc_free 01_example_malloc_free.c)
+add_executable(c_ch09_02_example_dynamic_array 02_example_dynamic_array.c)
+add_executable(c_ch09_03_example_memory_leak 03_example_memory_leak.c)
+add_executable(c_ch09_01_deep_dive_memory_patterns 01_deep_dive_memory_patterns.c)
+add_executable(c_ch09_02_deep_dive_memory_debug 02_deep_dive_memory_debug.c)

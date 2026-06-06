@@ -1,0 +1,4 @@
+add_executable(cpp_ch18_01_deep_dive_file_patterns 01_deep_dive_file_patterns.cpp)
+add_executable(cpp_ch18_01_example_file_stream 01_example_file_stream.cpp)
+add_executable(cpp_ch18_02_deep_dive_stream_advanced 02_deep_dive_stream_advanced.cpp)
+add_executable(cpp_ch18_02_example_stream_manipulation 02_example_stream_manipulation.cpp)

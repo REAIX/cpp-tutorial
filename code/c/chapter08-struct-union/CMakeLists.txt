@@ -1,0 +1,9 @@
+add_executable(c_ch08_01_example_struct_basics 01_example_struct_basics.c)
+add_executable(c_ch08_02_example_struct_alignment 02_example_struct_alignment.c)
+add_executable(c_ch08_03_example_union_bitfield 03_example_union_bitfield.c)
+add_executable(c_ch08_01_deep_dive_struct_patterns 01_deep_dive_struct_patterns.c)
+add_executable(c_ch08_02_deep_dive_memory_layout 02_deep_dive_memory_layout.c)
+
+if(UNIX)
+    target_link_libraries(c_ch08_01_deep_dive_struct_patterns PRIVATE m)
+endif()

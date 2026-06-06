@@ -1,0 +1,16 @@
+find_package(Threads REQUIRED)
+
+add_executable(cpp_ch30_01_deep_dive_sync_patterns 01_deep_dive_sync_patterns.cpp)
+target_link_libraries(cpp_ch30_01_deep_dive_sync_patterns Threads::Threads)
+
+add_executable(cpp_ch30_01_example_mutex_condition 01_example_mutex_condition.cpp)
+target_link_libraries(cpp_ch30_01_example_mutex_condition Threads::Threads)
+
+add_executable(cpp_ch30_02_deep_dive_sync_advanced 02_deep_dive_sync_advanced.cpp)
+target_link_libraries(cpp_ch30_02_deep_dive_sync_advanced Threads::Threads)
+
+add_executable(cpp_ch30_02_example_read_write_lock 02_example_read_write_lock.cpp)
+target_link_libraries(cpp_ch30_02_example_read_write_lock Threads::Threads)
+
+add_executable(cpp_ch30_03_example_condition_variable 03_example_condition_variable.cpp)
+target_link_libraries(cpp_ch30_03_example_condition_variable Threads::Threads)

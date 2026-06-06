@@ -1,0 +1,5 @@
+add_executable(c_ch03_01_example_if_switch 01_example_if_switch.c)
+add_executable(c_ch03_02_example_loops 02_example_loops.c)
+add_executable(c_ch03_03_example_goto 03_example_goto.c)
+add_executable(c_ch03_01_deep_dive_loop_patterns 01_deep_dive_loop_patterns.c)
+add_executable(c_ch03_02_deep_dive_switch_pitfalls 02_deep_dive_switch_pitfalls.c)

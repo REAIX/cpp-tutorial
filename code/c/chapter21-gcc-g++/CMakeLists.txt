@@ -1,0 +1,3 @@
+add_executable(c_ch21_01_example_gcc_options 01_example_gcc_options.c)
+add_executable(c_ch21_02_example_gcc_optimization 02_example_gcc_optimization.c)
+add_executable(c_ch21_01_deep_dive_gcc_advanced 01_deep_dive_gcc_advanced.c)

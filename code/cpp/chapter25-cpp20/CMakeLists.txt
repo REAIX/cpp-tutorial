@@ -1,0 +1,3 @@
+add_executable(cpp_ch25_01_deep_dive_cpp20_patterns 01_deep_dive_cpp20_patterns.cpp)
+add_executable(cpp_ch25_01_example_cpp20_features 01_example_cpp20_features.cpp)
+add_executable(cpp_ch25_02_example_cpp20_advanced 02_example_cpp20_advanced.cpp)

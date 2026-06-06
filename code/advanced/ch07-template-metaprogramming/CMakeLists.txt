@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.20)
+
+# Chapter 0: 编译期计算基础
+add_executable(adv_ch07_00_example_constexpr_basics 00_example_constexpr_basics.cpp)
+add_executable(adv_ch07_00_deep_dive_consteval_constinit 00_deep_dive_consteval_constinit.cpp)
+
+# Chapter 1: Type-Traits与类型操作
+add_executable(adv_ch07_01_example_type_traits 01_example_type_traits.cpp)
+add_executable(adv_ch07_01_deep_dive_custom_traits 01_deep_dive_custom_traits.cpp)
+
+# Chapter 2: SFINAE与替换失败
+add_executable(adv_ch07_02_example_sfinae_patterns 02_example_sfinae_patterns.cpp)
+add_executable(adv_ch07_02_deep_dive_sfinae_vs_concepts 02_deep_dive_sfinae_vs_concepts.cpp)
+
+# Chapter 3: 模板元编程模式
+add_executable(adv_ch07_03_example_compile_time_recursion 03_example_compile_time_recursion.cpp)
+add_executable(adv_ch07_03_deep_dive_typelist 03_deep_dive_typelist.cpp)
+
+# Chapter 4: CRTP与静态多态
+add_executable(adv_ch07_04_example_crtp_basics 04_example_crtp_basics.cpp)
+add_executable(adv_ch07_04_deep_dive_crtp_mixin 04_deep_dive_crtp_mixin.cpp)
+
+# Chapter 5: 表达式模板
+add_executable(adv_ch07_05_example_expression_templates 05_example_expression_templates.cpp)
+
+# Chapter 6: 编译期反射与代码生成
+add_executable(adv_ch07_06_example_macro_reflection 06_example_macro_reflection.cpp)
+
+# Chapter 7: 模板元编程实战
+add_executable(adv_ch07_07_example_compile_time_state_machine 07_example_compile_time_state_machine.cpp)
+add_executable(adv_ch07_07_deep_dive_compile_time_string 07_deep_dive_compile_time_string.cpp)

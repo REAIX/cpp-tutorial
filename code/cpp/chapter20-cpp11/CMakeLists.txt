@@ -1,0 +1,4 @@
+add_executable(cpp_ch20_01_deep_dive_cpp11_migration 01_deep_dive_cpp11_migration.cpp)
+add_executable(cpp_ch20_01_example_cpp11_core 01_example_cpp11_core.cpp)
+add_executable(cpp_ch20_02_deep_dive_cpp11_best_practices 02_deep_dive_cpp11_best_practices.cpp)
+add_executable(cpp_ch20_02_example_cpp11_library 02_example_cpp11_library.cpp)

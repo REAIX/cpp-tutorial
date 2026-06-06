@@ -1,0 +1,12 @@
+add_library(c_ch19_greetlib SHARED 01_example_dynamic_lib/greetlib.c)
+target_include_directories(c_ch19_greetlib PUBLIC 01_example_dynamic_lib)
+
+set_target_properties(c_ch19_greetlib PROPERTIES
+    WINDOWS_EXPORT_ALL_SYMBOLS ON
+    POSITION_INDEPENDENT_CODE ON
+)
+
+add_executable(c_ch19_01_example_dynamic_lib 01_example_dynamic_lib/main.c)
+target_link_libraries(c_ch19_01_example_dynamic_lib PRIVATE c_ch19_greetlib)
+
+add_executable(c_ch19_01_deep_dive_dynamic_lib_internals 01_deep_dive_dynamic_lib_internals.c)

@@ -1,0 +1,5 @@
+add_executable(c_ch29_01_example_interface 01_example_interface.c)
+add_executable(c_ch29_02_example_exception 02_example_exception.c)
+add_executable(c_ch29_03_example_template 03_example_template.c)
+add_executable(c_ch29_01_deep_dive_design_by_contract 01_deep_dive_design_by_contract.c)
+add_executable(c_ch29_02_deep_dive_oop_best_practices 02_deep_dive_oop_best_practices.c)

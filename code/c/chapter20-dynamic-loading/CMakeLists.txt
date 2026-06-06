@@ -1,0 +1,27 @@
+add_library(c_ch20_plugin_math_01 SHARED 01_example_dlopen/plugin_math.c)
+target_include_directories(c_ch20_plugin_math_01 PUBLIC 01_example_dlopen)
+set_target_properties(c_ch20_plugin_math_01 PROPERTIES
+    WINDOWS_EXPORT_ALL_SYMBOLS ON
+    POSITION_INDEPENDENT_CODE ON
+)
+
+add_executable(c_ch20_01_example_dlopen 01_example_dlopen/main.c)
+target_link_libraries(c_ch20_01_example_dlopen PRIVATE ${CMAKE_DL_LIBS})
+
+add_library(c_ch20_plugin_hello SHARED 01_deep_dive_plugin_architecture/plugin_hello.c)
+target_include_directories(c_ch20_plugin_hello PUBLIC 01_deep_dive_plugin_architecture)
+set_target_properties(c_ch20_plugin_hello PROPERTIES
+    WINDOWS_EXPORT_ALL_SYMBOLS ON
+    POSITION_INDEPENDENT_CODE ON
+)
+
+add_library(c_ch20_plugin_calc SHARED 01_deep_dive_plugin_architecture/plugin_calc.c)
+target_include_directories(c_ch20_plugin_calc PUBLIC 01_deep_dive_plugin_architecture)
+set_target_properties(c_ch20_plugin_calc PROPERTIES
+    WINDOWS_EXPORT_ALL_SYMBOLS ON
+    POSITION_INDEPENDENT_CODE ON
+)
+
+add_executable(c_ch20_01_deep_dive_plugin_architecture 01_deep_dive_plugin_architecture/main.c)
+target_include_directories(c_ch20_01_deep_dive_plugin_architecture PRIVATE 01_deep_dive_plugin_architecture)
+target_link_libraries(c_ch20_01_deep_dive_plugin_architecture PRIVATE ${CMAKE_DL_LIBS})

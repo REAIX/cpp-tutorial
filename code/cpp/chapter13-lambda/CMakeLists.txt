@@ -1,0 +1,4 @@
+add_executable(cpp_ch13_01_deep_dive_lambda_advanced 01_deep_dive_lambda_advanced.cpp)
+add_executable(cpp_ch13_01_example_lambda_basics 01_example_lambda_basics.cpp)
+add_executable(cpp_ch13_02_deep_dive_lambda_patterns 02_deep_dive_lambda_patterns.cpp)
+add_executable(cpp_ch13_02_example_function_object 02_example_function_object.cpp)

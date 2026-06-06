@@ -1,0 +1,4 @@
+add_executable(cpp_ch11_01_deep_dive_template_metaprogramming 01_deep_dive_template_metaprogramming.cpp)
+add_executable(cpp_ch11_01_example_variadic_template 01_example_variadic_template.cpp)
+add_executable(cpp_ch11_02_deep_dive_ctad 02_deep_dive_ctad.cpp)
+add_executable(cpp_ch11_02_example_sfinae 02_example_sfinae.cpp)

@@ -1,0 +1,4 @@
+add_executable(cpp_ch16_01_deep_dive_regex_engine 01_deep_dive_regex_engine.cpp)
+add_executable(cpp_ch16_01_example_regex_basics 01_example_regex_basics.cpp)
+add_executable(cpp_ch16_02_deep_dive_regex_patterns 02_deep_dive_regex_patterns.cpp)
+add_executable(cpp_ch16_02_example_regex_practice 02_example_regex_practice.cpp)

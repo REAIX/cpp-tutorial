@@ -1,0 +1,82 @@
+# Makefile 深入剖析示例
+# 对应文档: 22-makefile
+# 演示递归Make、自动依赖生成、并行构建、跨平台等高级模式
+#
+# 使用方法:
+#   make              编译默认版本
+#   make DEBUG=1      编译调试版本
+#   make -j4          并行编译(4任务)
+#   make clean        清理
+#   make dep          显示依赖关系
+
+# ========== 项目配置 ==========
+PROJECT  := deep_dive_makefile
+VERSION  := 1.0.0
+
+# ========== 编译器 ==========
+CC       := gcc
+CFLAGS   := -Wall -Wextra -Wpedantic -std=c17
+LDFLAGS  :=
+LDLIBS   := -lm
+
+# ========== 构建类型 ==========
+DEBUG    ?= 0
+ifeq ($(DEBUG),1)
+    CFLAGS  += -g -O0 -DDEBUG
+    BUILDDIR := build/debug
+else
+    CFLAGS  += -O2 -DNDEBUG
+    BUILDDIR := build/release
+endif
+
+# ========== 源文件 ==========
+SRCDIR   := .
+SRCS     := $(wildcard $(SRCDIR)/01_deep_dive_makefile_patterns.c)
+OBJS     := $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SRCS))
+DEPS     := $(OBJS:.o=.d)
+
+# ========== 自动依赖生成 ==========
+CFLAGS   += -MMD -MP
+
+# ========== 目标 ==========
+TARGET   := $(BUILDDIR)/$(PROJECT)
+
+.PHONY: all clean debug release dep help
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c | $(BUILDDIR)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILDDIR):
+	@if not exist $@ mkdir $@
+
+clean:
+	$(RM) -r build 2>nul || rmdir /s /q build 2>nul
+
+debug:
+	$(MAKE) DEBUG=1
+
+release:
+	$(MAKE) DEBUG=0
+
+dep:
+	@echo "源文件: $(SRCS)"
+	@echo "目标文件: $(OBJS)"
+	@echo "依赖文件: $(DEPS)"
+
+help:
+	@echo "可用目标:"
+	@echo "  all       - 编译程序 (默认)"
+	@echo "  debug     - 编译调试版本"
+	@echo "  release   - 编译发布版本"
+	@echo "  clean     - 清理构建目录"
+	@echo "  dep       - 显示依赖关系"
+	@echo "  help      - 显示此帮助"
+	@echo ""
+	@echo "并行编译: make -j4"
+
+-include $(DEPS)

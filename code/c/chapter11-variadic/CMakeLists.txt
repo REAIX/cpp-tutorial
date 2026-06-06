@@ -1,0 +1,5 @@
+add_executable(c_ch11_01_example_variadic_functions 01_example_variadic_functions.c)
+add_executable(c_ch11_02_example_command_line 02_example_command_line.c)
+add_executable(c_ch11_03_example_getopt 03_example_getopt.c)
+add_executable(c_ch11_01_deep_dive_varargs_patterns 01_deep_dive_varargs_patterns.c)
+add_executable(c_ch11_02_deep_dive_cli_patterns 02_deep_dive_cli_patterns.c)

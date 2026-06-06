@@ -1,0 +1,4 @@
+add_executable(cpp_ch02_01_deep_dive_namespace_patterns 01_deep_dive_namespace_patterns.cpp)
+add_executable(cpp_ch02_01_example_namespace 01_example_namespace.cpp)
+add_executable(cpp_ch02_02_deep_dive_api_design 02_deep_dive_api_design.cpp)
+add_executable(cpp_ch02_02_example_coding_style 02_example_coding_style.cpp)

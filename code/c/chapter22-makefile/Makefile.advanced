@@ -1,0 +1,75 @@
+# Makefile 高级特性示例
+# 对应文档: 22-makefile
+# 演示模式规则、自动变量、条件判断、函数等高级特性
+#
+# 使用方法:
+#   make              编译默认版本
+#   make DEBUG=1      编译调试版本
+#   make release      编译发布版本
+#   make clean        清理
+#   make vars         显示变量值
+
+# ========== 变量定义 (使用 := 简单展开) ==========
+CC       := gcc
+CFLAGS   := -Wall -Wextra -std=c17
+LDFLAGS  :=
+TARGET   := demo_advanced
+
+# 源文件自动发现
+SRC      := $(wildcard 02_example_makefile_advanced.c)
+OBJ      := $(patsubst %.c,%.o,$(SRC))
+
+# ========== 条件编译 ==========
+DEBUG    ?= 0
+
+ifeq ($(DEBUG),1)
+    CFLAGS  += -g -O0 -DDEBUG
+    BUILD   := debug
+else
+    CFLAGS  += -O2 -DNDEBUG
+    BUILD   := release
+endif
+
+# ========== 伪目标 ==========
+.PHONY: all clean release debug vars help
+
+# ========== 默认目标 ==========
+all: $(TARGET)
+	@echo "构建完成: $(BUILD) 模式"
+
+# ========== 链接规则 ==========
+$(TARGET): $(OBJ)
+	$(CC) $(LDFLAGS) -o $@ $^
+
+# ========== 模式规则 ==========
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+# ========== 伪目标 ==========
+debug:
+	$(MAKE) DEBUG=1 all
+
+release:
+	$(MAKE) DEBUG=0 all
+
+clean:
+	$(RM) $(OBJ) $(TARGET) 2>nul || del /f $(OBJ) $(TARGET) 2>nul
+
+vars:
+	@echo "CC      = $(CC)"
+	@echo "CFLAGS  = $(CFLAGS)"
+	@echo "LDFLAGS = $(LDFLAGS)"
+	@echo "TARGET  = $(TARGET)"
+	@echo "SRC     = $(SRC)"
+	@echo "OBJ     = $(OBJ)"
+	@echo "DEBUG   = $(DEBUG)"
+	@echo "BUILD   = $(BUILD)"
+
+help:
+	@echo "可用目标:"
+	@echo "  all       - 编译程序 (默认)"
+	@echo "  debug     - 编译调试版本 (DEBUG=1)"
+	@echo "  release   - 编译发布版本 (DEBUG=0)"
+	@echo "  clean     - 清理生成文件"
+	@echo "  vars      - 显示Makefile变量值"
+	@echo "  help      - 显示此帮助信息"

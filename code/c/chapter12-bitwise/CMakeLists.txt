@@ -1,0 +1,5 @@
+add_executable(c_ch12_01_example_bit_operations 01_example_bit_operations.c)
+add_executable(c_ch12_02_example_bit_tricks 02_example_bit_tricks.c)
+add_executable(c_ch12_03_example_bitfield 03_example_bitfield.c)
+add_executable(c_ch12_01_deep_dive_bitwise_patterns 01_deep_dive_bitwise_patterns.c)
+add_executable(c_ch12_02_deep_dive_bitwise_applications 02_deep_dive_bitwise_applications.c)

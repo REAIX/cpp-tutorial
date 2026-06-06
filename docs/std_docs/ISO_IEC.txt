@@ -1,0 +1,13 @@
+https://www.open-std.org/
+
+https://isocpp.org/std
+
+https://en.cppreference.com/
+
+
+https://github.com/ISO-IEC-Docs/
+
+github 下载
+https://github.com/ISO-IEC-Docs/9899.git
+
+https://github.com/ISO-IEC-Docs/14882.git

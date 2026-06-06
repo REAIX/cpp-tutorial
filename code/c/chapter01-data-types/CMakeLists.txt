@@ -1,0 +1,9 @@
+add_executable(c_ch01_01_example_basic_types 01_example_basic_types.c)
+add_executable(c_ch01_02_example_variables_constants 02_example_variables_constants.c)
+add_executable(c_ch01_03_example_type_conversion 03_example_type_conversion.c)
+add_executable(c_ch01_01_deep_dive_type_limits 01_deep_dive_type_limits.c)
+add_executable(c_ch01_02_deep_dive_float_pitfalls 02_deep_dive_float_pitfalls.c)
+
+if(UNIX)
+    target_link_libraries(c_ch01_02_deep_dive_float_pitfalls PRIVATE m)
+endif()

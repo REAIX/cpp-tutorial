@@ -1,0 +1,10 @@
+add_executable(c_ch14_01_example_time_basics 01_example_time_basics.c)
+add_executable(c_ch14_02_example_time_format 02_example_time_format.c)
+add_executable(c_ch14_03_example_time_measure 03_example_time_measure.c)
+add_executable(c_ch14_01_deep_dive_time_patterns 01_deep_dive_time_patterns.c)
+add_executable(c_ch14_02_deep_dive_time_advanced 02_deep_dive_time_advanced.c)
+
+if(UNIX)
+    target_link_libraries(c_ch14_03_example_time_measure PRIVATE m)
+    target_link_libraries(c_ch14_02_deep_dive_time_advanced PRIVATE m)
+endif()

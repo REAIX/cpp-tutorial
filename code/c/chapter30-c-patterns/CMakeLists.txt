@@ -1,0 +1,6 @@
+add_executable(c_ch30_01_example_singleton 01_example_singleton.c)
+add_executable(c_ch30_02_example_observer 02_example_observer.c)
+add_executable(c_ch30_03_example_strategy 03_example_strategy.c)
+add_executable(c_ch30_04_example_factory 04_example_factory.c)
+add_executable(c_ch30_01_deep_dive_pattern_catalog 01_deep_dive_pattern_catalog.c)
+add_executable(c_ch30_02_deep_dive_pattern_selection 02_deep_dive_pattern_selection.c)

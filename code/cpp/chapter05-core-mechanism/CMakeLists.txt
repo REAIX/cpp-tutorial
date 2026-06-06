@@ -1,0 +1,5 @@
+add_executable(cpp_ch05_01_deep_dive_const_correctness 01_deep_dive_const_correctness.cpp)
+add_executable(cpp_ch05_01_example_const 01_example_const.cpp)
+add_executable(cpp_ch05_02_deep_dive_type_casting 02_deep_dive_type_casting.cpp)
+add_executable(cpp_ch05_02_example_static 02_example_static.cpp)
+add_executable(cpp_ch05_03_example_explicit 03_example_explicit.cpp)

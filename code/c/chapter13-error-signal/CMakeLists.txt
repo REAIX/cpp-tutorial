@@ -1,0 +1,9 @@
+add_executable(c_ch13_01_example_errno 01_example_errno.c)
+add_executable(c_ch13_02_example_signal 02_example_signal.c)
+add_executable(c_ch13_03_example_assert 03_example_assert.c)
+add_executable(c_ch13_01_deep_dive_error_patterns 01_deep_dive_error_patterns.c)
+add_executable(c_ch13_02_deep_dive_signal_advanced 02_deep_dive_signal_advanced.c)
+
+if(UNIX)
+    target_link_libraries(c_ch13_01_example_errno PRIVATE m)
+endif()

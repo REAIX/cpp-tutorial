@@ -1,0 +1,7 @@
+add_library(c_ch18_mathlib_static STATIC 01_example_static_lib/mathlib.c)
+target_include_directories(c_ch18_mathlib_static PUBLIC 01_example_static_lib)
+
+add_executable(c_ch18_01_example_static_lib 01_example_static_lib/main.c)
+target_link_libraries(c_ch18_01_example_static_lib PRIVATE c_ch18_mathlib_static)
+
+add_executable(c_ch18_01_deep_dive_static_lib_internals 01_deep_dive_static_lib_internals.c)

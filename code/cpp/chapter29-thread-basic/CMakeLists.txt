@@ -1,0 +1,13 @@
+find_package(Threads REQUIRED)
+
+add_executable(cpp_ch29_01_deep_dive_thread_patterns 01_deep_dive_thread_patterns.cpp)
+target_link_libraries(cpp_ch29_01_deep_dive_thread_patterns Threads::Threads)
+
+add_executable(cpp_ch29_01_example_thread_basic 01_example_thread_basic.cpp)
+target_link_libraries(cpp_ch29_01_example_thread_basic Threads::Threads)
+
+add_executable(cpp_ch29_02_deep_dive_thread_pitfalls 02_deep_dive_thread_pitfalls.cpp)
+target_link_libraries(cpp_ch29_02_deep_dive_thread_pitfalls Threads::Threads)
+
+add_executable(cpp_ch29_02_example_thread_parameter 02_example_thread_parameter.cpp)
+target_link_libraries(cpp_ch29_02_example_thread_parameter Threads::Threads)

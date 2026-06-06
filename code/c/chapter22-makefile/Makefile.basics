@@ -1,0 +1,45 @@
+# Makefile 基础示例
+# 对应文档: 22-makefile
+# 本 Makefile 演示 Makefile 的基本语法和常用功能
+#
+# 使用方法:
+#   make          编译程序
+#   make run      编译并运行
+#   make clean    清理生成文件
+#   make help     显示帮助信息
+
+# ========== 变量定义 ==========
+CC       = gcc
+CFLAGS   = -Wall -Wextra -std=c17 -g
+LDFLAGS  =
+TARGET   = demo_basics
+SRC      = 01_example_makefile_basics.c
+OBJ      = $(SRC:.c=.o)
+
+# ========== 伪目标声明 ==========
+.PHONY: all clean run help
+
+# ========== 默认目标 ==========
+all: $(TARGET)
+
+# ========== 链接规则 ==========
+$(TARGET): $(OBJ)
+	$(CC) $(LDFLAGS) -o $@ $^
+
+# ========== 编译规则 ==========
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+# ========== 伪目标 ==========
+run: $(TARGET)
+	./$(TARGET)
+
+clean:
+	$(RM) $(OBJ) $(TARGET) 2>nul || del /f $(OBJ) $(TARGET) 2>nul
+
+help:
+	@echo "可用目标:"
+	@echo "  all    - 编译程序 (默认)"
+	@echo "  run    - 编译并运行"
+	@echo "  clean  - 清理生成文件"
+	@echo "  help   - 显示此帮助信息"

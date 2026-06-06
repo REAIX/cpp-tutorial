@@ -1,0 +1,4 @@
+add_executable(c_ch00_01_example_hello_world 01_example_hello_world.c)
+add_executable(c_ch00_02_example_program_structure 02_example_program_structure.c)
+add_executable(c_ch00_01_deep_dive_compilation_process 01_deep_dive_compilation_process.c)
+add_executable(c_ch00_02_deep_dive_c_philosophy 02_deep_dive_c_philosophy.c)

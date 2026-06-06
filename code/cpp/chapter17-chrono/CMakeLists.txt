@@ -1,0 +1,4 @@
+add_executable(cpp_ch17_01_deep_dive_chrono_patterns 01_deep_dive_chrono_patterns.cpp)
+add_executable(cpp_ch17_01_example_chrono_basics 01_example_chrono_basics.cpp)
+add_executable(cpp_ch17_02_deep_dive_chrono_advanced 02_deep_dive_chrono_advanced.cpp)
+add_executable(cpp_ch17_02_example_chrono_timer 02_example_chrono_timer.cpp)

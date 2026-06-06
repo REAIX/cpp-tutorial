@@ -1,0 +1,13 @@
+add_executable(c_ch25_01_example_tcp_server 01_example_tcp_server.c)
+add_executable(c_ch25_02_example_tcp_client 02_example_tcp_client.c)
+add_executable(c_ch25_03_example_udp 03_example_udp.c)
+add_executable(c_ch25_01_deep_dive_network_patterns 01_deep_dive_network_patterns.c)
+add_executable(c_ch25_02_deep_dive_protocol_design 02_deep_dive_protocol_design.c)
+
+if(WIN32)
+    target_link_libraries(c_ch25_01_example_tcp_server PRIVATE ws2_32)
+    target_link_libraries(c_ch25_02_example_tcp_client PRIVATE ws2_32)
+    target_link_libraries(c_ch25_03_example_udp PRIVATE ws2_32)
+    target_link_libraries(c_ch25_01_deep_dive_network_patterns PRIVATE ws2_32)
+    target_link_libraries(c_ch25_02_deep_dive_protocol_design PRIVATE ws2_32)
+endif()

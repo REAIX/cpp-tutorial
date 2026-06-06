@@ -1,0 +1,6 @@
+add_executable(c_ch15_01_example_file_read_write 01_example_file_read_write.c)
+add_executable(c_ch15_02_example_binary_file 02_example_binary_file.c)
+add_executable(c_ch15_03_example_file_seek 03_example_file_seek.c)
+add_executable(c_ch15_04_example_temp_file 04_example_temp_file.c)
+add_executable(c_ch15_01_deep_dive_file_patterns 01_deep_dive_file_patterns.c)
+add_executable(c_ch15_02_deep_dive_file_advanced 02_deep_dive_file_advanced.c)
