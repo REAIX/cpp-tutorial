@@ -26,11 +26,11 @@
 
 | 章节 | 文档 | 内容概要 | 示例代码 |
 |-----|------|---------|---------|
-| 第0章 | [00-C语言概述.md](./docs/01-C语言/00-C语言概述.md) | 编译过程、程序结构、C语言哲学 | [chapter00](./code/c/chapter00-c-overview/) |
-| 第1章 | [01-数据类型与变量.md](./docs/01-C语言/01-数据类型与变量.md) | 基本类型、变量常量、类型转换、类型限制 | [chapter01](./code/c/chapter01-data-types/) |
+| 第0章 | [00-C语言概述.md](./docs/01-C语言/00-C语言概述.md) | C语言历史与特点、开发环境搭建、第一个程序 | [chapter00](./code/c/chapter00-c-overview/) |
+| 第1章 | [01-数据类型与变量.md](./docs/01-C语言/01-数据类型与变量.md) | 基本类型、变量常量、类型转换、格式化输入输出、enum、typedef | [chapter01](./code/c/chapter01-data-types/) |
 | 第2章 | [02-运算符与表达式.md](./docs/01-C语言/02-运算符与表达式.md) | 算术/逻辑/赋值运算符、运算符优先级、位运算技巧 | [chapter02](./code/c/chapter02-operators/) |
 | 第3章 | [03-控制结构.md](./docs/01-C语言/03-控制结构.md) | if/switch/循环/goto、循环模式、switch陷阱 | [chapter03](./code/c/chapter03-control-structure/) |
-| 第4章 | [04-函数.md](./docs/01-C语言/04-函数.md) | 函数基础/高级、调用约定、递归、作用域与生命周期 | [chapter04](./code/c/chapter04-function/) |
+| 第4章 | [04-函数.md](./docs/01-C语言/04-函数.md) | 函数基础/高级、递归、作用域与生命周期、可变参数、static/extern | [chapter04](./code/c/chapter04-function/) |
 | 第5章 | [05-数组.md](./docs/01-C语言/05-数组.md) | 一维/多维数组、数组与函数、数组内存布局 | [chapter05](./code/c/chapter05-array/) |
 | 第6章 | [06-指针.md](./docs/01-C语言/06-指针.md) | 指针基础/算术、指针与数组、指针模式与陷阱 | [chapter06](./code/c/chapter06-pointer/) |
 | 第7章 | [07-字符串处理.md](./docs/01-C语言/07-字符串处理.md) | 字符串基础/操作/高级、字符串安全 | [chapter07](./code/c/chapter07-string/) |
@@ -45,15 +45,17 @@
 | 第16章 | [16-多文件编程.md](./docs/01-C语言/16-多文件编程.md) | 头文件组织、头文件保护、不透明指针、项目结构 | [chapter16](./code/c/chapter16-multi-file/) |
 | 第17章 | [17-编译与链接.md](./docs/01-C语言/17-编译与链接.md) | 编译阶段、符号解析、链接器脚本 | [chapter17](./code/c/chapter17-compile-link/) |
 | 第18章 | [18-静态库.md](./docs/01-C语言/18-静态库.md) | 静态库创建与使用、静态库内部原理 | [chapter18](./code/c/chapter18-static-library/) |
-| 第19章 | [19-动态库与共享库.md](./docs/01-C语言/19-动态库与共享库.md) | 动态链接、动态加载、动态库内部原理 | [chapter19](./code/c/chapter19-dynamic-library/) |
+| 第19章 | [19-动态库与共享库.md](./docs/01-C语言/19-动态库与共享库.md) | 动态链接、动态加载(dlopen/dlsym)、插件架构 | [chapter19](./code/c/chapter19-dynamic-library/) |
 | 第20章 | [20-GCC与G++编译器.md](./docs/01-C语言/20-GCC与G++编译器.md) | 编译器选项、优化级别、GCC高级用法 | [chapter20](./code/c/chapter20-gcc-g++/) |
 | 第21章 | [21-Makefile与构建系统.md](./docs/01-C语言/21-Makefile与构建系统.md) | Makefile语法、依赖管理、Makefile模式 | [chapter21](./code/c/chapter21-makefile/) |
 | 第22章 | [22-CMake构建系统.md](./docs/01-C语言/22-CMake构建系统.md) | CMake语法、CMakeLists.txt、CMake模式 | [chapter22](./code/c/chapter22-cmake/) |
 | 第23章 | [23-进程与线程.md](./docs/01-C语言/23-进程与线程.md) | fork/exec/pthread/mutex、进程间通信 | [chapter23](./code/c/chapter23-process-thread/) |
-| 第24章 | [24-网络编程基础.md](./docs/01-C语言/24-网络编程基础.md) | Socket编程、TCP/UDP客户端服务端、协议设计 | [chapter24](./code/c/chapter24-network/) |
+| 第24章 | [24-网络编程基础.md](./docs/01-C语言/24-网络编程基础.md) | Socket编程、TCP/UDP客户端服务端、I/O多路复用基础 | [chapter24](./code/c/chapter24-network/) |
 | 第25章 | [25-链表与数据结构.md](./docs/01-C语言/25-链表与数据结构.md) | 单链表、双链表、栈、队列、二叉树 | [chapter25](./code/c/chapter25-data-structure/) |
 | 第26章 | [26-排序与查找算法.md](./docs/01-C语言/26-排序与查找算法.md) | 冒泡/快排/归并排序、二分查找、哈希表 | [chapter26](./code/c/chapter26-algorithm/) |
 | 第27章 | [27-C语言面向对象实现-基础.md](./docs/01-C语言/27-C语言面向对象实现-基础.md) | 封装、继承、多态、虚表实现 | [chapter27](./code/c/chapter27-c-oop-basic/) |
+| 第28章 | [28-C语言面向对象实现-进阶.md](./docs/01-C语言/28-C语言面向对象实现-进阶.md) | 接口与抽象类、Mixin模式、引用计数、观察者/策略/工厂模式 | [chapter28](./code/c/chapter28-c-oop-advanced/) |
+| 第29章 | [29-C语言设计模式实现.md](./docs/01-C语言/29-C语言设计模式实现.md) | 创建型、结构型、行为型设计模式 | [chapter29](./code/c/chapter29-c-patterns/) |
 
 ### 2. 第二部分：C++ 基础
 
@@ -64,7 +66,7 @@
 | 第2章 | [02-命名空间与编码规范.md](./docs/02-CPP/02-命名空间与编码规范.md) | 命名空间模式、API设计、编码风格 | [chapter02](./code/cpp/chapter02-namespace/) |
 | 第3章 | [03-类与对象.md](./docs/02-CPP/03-类与对象.md) | 类基础、成员函数、对象生命周期、三/五法则 | [chapter03](./code/cpp/chapter03-class-object/) |
 | 第4章 | [04-继承与多态.md](./docs/02-CPP/04-继承与多态.md) | 继承、多态、虚函数机制、多重继承 | [chapter04](./code/cpp/chapter04-inheritance-polymorphism/) |
-| 第5章 | [05-核心机制.md](./docs/02-CPP/05-核心机制.md) | const正确性、类型转换、static、explicit | [chapter05](./code/cpp/chapter05-core-mechanism/) |
+| 第5章 | [05-核心机制.md](./docs/02-CPP/05-核心机制.md) | const正确性、类型转换、static、explicit、RAII | [chapter05](./code/cpp/chapter05-core-mechanism/) |
 | 第6章 | [06-运算符重载与友元.md](./docs/02-CPP/06-运算符重载与友元.md) | 算术/特殊运算符重载、友元、重载陷阱 | [chapter06](./code/cpp/chapter06-operator-overload/) |
 | 第7章 | [07-异常处理.md](./docs/02-CPP/07-异常处理.md) | try-catch-throw、异常安全、异常设计 | [chapter07](./code/cpp/chapter07-exception/) |
 | 第8章 | [08-智能指针与内存管理.md](./docs/02-CPP/08-智能指针与内存管理.md) | unique_ptr、shared_ptr、智能指针模式与陷阱 | [chapter08](./code/cpp/chapter08-smart-pointer/) |
@@ -73,12 +75,12 @@
 | 第11章 | [11-模板进阶.md](./docs/02-CPP/11-模板进阶.md) | 可变参数模板、SFINAE、模板元编程、CTAD | [chapter11](./code/cpp/chapter11-template-advanced/) |
 | 第12章 | [12-类型推导.md](./docs/02-CPP/12-类型推导.md) | auto推导、decltype、模板参数推导、推导陷阱 | [chapter12](./code/cpp/chapter12-type-deduction/) |
 | 第13章 | [13-Lambda与函数对象.md](./docs/02-CPP/13-Lambda与函数对象.md) | Lambda基础/高级、函数对象、Lambda模式 | [chapter13](./code/cpp/chapter13-lambda/) |
-| 第14章 | [14-STL容器.md](./docs/02-CPP/14-STL容器.md) | 序列/关联/无序容器、容器选择与模式 | [chapter14](./code/cpp/chapter14-stl-container/) |
+| 第14章 | [14-STL容器.md](./docs/02-CPP/14-STL容器.md) | STL标准库核心组件、序列/关联/无序容器、容器选择与模式 | [chapter14](./code/cpp/chapter14-stl-container/) |
 | 第15章 | [15-STL算法与迭代器.md](./docs/02-CPP/15-STL算法与迭代器.md) | 非修改/修改/数值算法、迭代器分类、算法模式 | [chapter15](./code/cpp/chapter15-stl-algorithm/) |
 | 第16章 | [16-正则表达式.md](./docs/02-CPP/16-正则表达式.md) | regex语法、匹配搜索替换、正则引擎与模式 | [chapter16](./code/cpp/chapter16-regex/) |
 | 第17章 | [17-日期时间库.md](./docs/02-CPP/17-日期时间库.md) | chrono基础/高级、时钟、计时器 | [chapter17](./code/cpp/chapter17-chrono/) |
-| 第18章 | [18-文件操作与文件系统.md](./docs/02-CPP/18-文件操作与文件系统.md) | 文件流、文件系统、流操作与高级模式 | [chapter18](./code/cpp/chapter18-file-io/) |
-| 第19章 | [19-C++11新特性.md](./docs/02-CPP/19-C++11新特性.md) | auto、右值引用、智能指针、Lambda、核心与库特性 | [chapter19](./code/cpp/chapter19-cpp11/) |
+| 第18章 | [18-文件操作与文件系统.md](./docs/02-CPP/18-文件操作与文件系统.md) | 文件流、文件系统、流操作与高级模式、filesystem进阶 | [chapter18](./code/cpp/chapter18-file-io/) |
+| 第19章 | [19-C++11新特性.md](./docs/02-CPP/19-C++11新特性.md) | auto、右值引用、智能指针、Lambda、C++11/14核心与库特性 | [chapter19](./code/cpp/chapter19-cpp11/) |
 | 第20章 | [20-C++14新特性.md](./docs/02-CPP/20-C++14新特性.md) | 返回类型推导、泛型Lambda、make_unique | [chapter20](./code/cpp/chapter20-cpp14/) |
 | 第21章 | [21-C++17新特性.md](./docs/02-CPP/21-C++17新特性.md) | 结构化绑定、optional、variant、string_view | [chapter21](./code/cpp/chapter21-cpp17/) |
 | 第22章 | [22-Concepts.md](./docs/02-CPP/22-Concepts.md) | 约束定义、requires子句、自定义概念、概念与模板 | [chapter22](./code/cpp/chapter22-concepts/) |
@@ -88,8 +90,8 @@
 | 第26章 | [26-模块.md](./docs/02-CPP/26-模块.md) | module/export/import、模块分区、模块迁移 | [chapter26](./code/cpp/chapter26-modules/) |
 | 第27章 | [27-多线程基础.md](./docs/02-CPP/27-多线程基础.md) | 线程创建/管理/参数、线程模式与陷阱 | [chapter27](./code/cpp/chapter27-thread-basic/) |
 | 第28章 | [28-线程同步.md](./docs/02-CPP/28-线程同步.md) | 互斥量、条件变量、读写锁、同步模式 | [chapter28](./code/cpp/chapter28-thread-sync/) |
-| 第29章 | [29-原子操作与异步编程.md](./docs/02-CPP/29-原子操作与异步编程.md) | atomic、future/promise、async、异步模式 | [chapter29](./code/cpp/chapter29-atomic-async/) |
-| 第30章 | [30-线程池实现.md](./docs/02-CPP/30-线程池实现.md) | 线程池设计、任务队列、线程池模式 | [chapter30](./code/cpp/chapter30-thread-pool/) |
+| 第29章 | [29-原子操作与异步编程.md](./docs/02-CPP/29-原子操作与异步编程.md) | atomic、future/promise、async、异步模式、内存模型、happens-before | [chapter29](./code/cpp/chapter29-atomic-async/) |
+| 第30章 | [30-线程池实现.md](./docs/02-CPP/30-线程池实现.md) | 线程池设计、任务队列、无锁编程、CAS模式 | [chapter30](./code/cpp/chapter30-thread-pool/) |
 | 第31章 | [31-网络编程.md](./docs/02-CPP/31-网络编程.md) | Socket编程、TCP/UDP、网络模式与高级应用 | [chapter31](./code/cpp/chapter31-network/) |
 | 第32章 | [32-序列化与日志.md](./docs/02-CPP/32-序列化与日志.md) | JSON/二进制序列化、日志框架设计 | [chapter32](./code/cpp/chapter32-serialization/) |
 | 第33章 | [33-包管理工具.md](./docs/02-CPP/33-包管理工具.md) | vcpkg、Conan、CMake集成、依赖管理 | [chapter33](./code/cpp/chapter33-package-manager/) |
@@ -140,7 +142,7 @@
 | 分类 | 文档目录 | 问题数 |
 |-----|---------|-------|
 | 零基础入门 | [00-零基础入门/](./docs/03-问题解答/00-零基础入门/) | 20 |
-| 基础概念 | [01-基础概念/](./docs/03-问题解答/01-基础概念/) | 36 |
+| 基础概念 | [01-基础概念/](./docs/03-问题解答/01-基础概念/) | 37 |
 | 内存与底层 | [02-内存与底层/](./docs/03-问题解答/02-内存与底层/) | 22 |
 | 编译与链接 | [03-编译与链接/](./docs/03-问题解答/03-编译与链接/) | 13 |
 | C++核心特性 | [04-CPP核心特性/](./docs/03-问题解答/04-CPP核心特性/) | 40 |
@@ -148,7 +150,7 @@
 | 并发编程 | [06-并发编程/](./docs/03-问题解答/06-并发编程/) | 32 |
 | 现代C++标准库 | [07-现代CPP标准库/](./docs/03-问题解答/07-现代CPP标准库/) | 20 |
 | 调试与性能 | [08-调试与性能/](./docs/03-问题解答/08-调试与性能/) | 13 |
-| 系统与安全 | [09-系统与安全/](./docs/03-问题解答/09-系统与安全/) | 11 |
+| 系统与安全 | [09-系统与安全/](./docs/03-问题解答/09-系统与安全/) | 13 |
 | 工程实践 | [10-工程实践/](./docs/03-问题解答/10-工程实践/) | 33 |
 | 常见错误与陷阱 | [11-常见错误与陷阱/](./docs/03-问题解答/11-常见错误与陷阱/) | 10 |
 | 开发工具与工作流 | [12-开发工具与工作流/](./docs/03-问题解答/12-开发工具与工作流/) | 10 |
@@ -166,6 +168,9 @@
 | 第2章 | [02-SFINAE与替换失败.md](./docs/05-进阶与拓展/模板元编程/02-SFINAE与替换失败.md) | SFINAE原理、函数重载/偏特化/void_t模式 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
 | 第3章 | [03-CRTP与静态多态.md](./docs/05-进阶与拓展/模板元编程/03-CRTP与静态多态.md) | CRTP原理、静态vs动态多态 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
 | 第4章 | [04-模板元编程实战.md](./docs/05-进阶与拓展/模板元编程/04-模板元编程实战.md) | 编译期状态机/JSON解析/正则 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第5章 | [05-表达式模板.md](./docs/05-进阶与拓展/模板元编程/05-表达式模板.md) | 延迟计算、零开销抽象、消除临时对象 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第6章 | [06-编译期反射与代码生成.md](./docs/05-进阶与拓展/模板元编程/06-编译期反射与代码生成.md) | 编译期反射、自动代码生成 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第7章 | [07-模板元编程模式.md](./docs/05-进阶与拓展/模板元编程/07-模板元编程模式.md) | 编译期代码模式、元编程最佳实践 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
 
 #### 高性能网络
 
@@ -188,8 +193,10 @@
 | 第1章 | [01-高级内存管理.md](./docs/05-进阶与拓展/系统级编程/01-高级内存管理.md) | ptmalloc/jemalloc/tcmalloc |
 | 第2章 | [02-CPU缓存优化.md](./docs/05-进阶与拓展/系统级编程/02-CPU缓存优化.md) | 缓存行对齐、AoS/SoA |
 | 第3章 | [03-SIMD与向量化编程.md](./docs/05-进阶与拓展/系统级编程/03-SIMD与向量化编程.md) | SSE/AVX intrinsics |
-| 第4章 | [04-性能剖析与调优方法论.md](./docs/05-进阶与拓展/系统级编程/04-性能剖析与调优方法论.md) | perf/VTune、火焰图 |
+| 第4章 | [04-分支预测与流水线优化.md](./docs/05-进阶与拓展/系统级编程/04-分支预测与流水线优化.md) | CPU流水线、分支预测机制、流水线友好代码 |
 | 第5章 | [05-系统级编程实战.md](./docs/05-进阶与拓展/系统级编程/05-系统级编程实战.md) | 高性能日志、DPDK |
+| 第6章 | [06-高级并发数据结构.md](./docs/05-进阶与拓展/系统级编程/06-高级并发数据结构.md) | 无锁编程、高级并发数据结构 |
+| 第7章 | [07-性能剖析与调优方法论.md](./docs/05-进阶与拓展/系统级编程/07-性能剖析与调优方法论.md) | perf、火焰图、热点定位、微基准测试 |
 
 #### 安全编程
 
@@ -197,7 +204,9 @@
 |-----|------|---------|
 | 第0章 | [00-安全编程概述.md](./docs/05-进阶与拓展/安全编程/00-安全编程概述.md) | 威胁模型、SDL、OWASP |
 | 第1章 | [01-内存安全与漏洞防御.md](./docs/05-进阶与拓展/安全编程/01-内存安全与漏洞防御.md) | 栈/堆溢出、ASLR/DEP |
-| 第2章 | [02-模糊测试与漏洞挖掘.md](./docs/05-进阶与拓展/安全编程/02-模糊测试与漏洞挖掘.md) | AFL/LibFuzzer、CVE |
+| 第2章 | [02-密码学与安全通信.md](./docs/05-进阶与拓展/安全编程/02-密码学与安全通信.md) | 密码学原理、安全通信实践 |
+| 第3章 | [03-逆向工程基础.md](./docs/05-进阶与拓展/安全编程/03-逆向工程基础.md) | 逆向工程原理、二进制分析 |
+| 第4章 | [04-模糊测试与漏洞挖掘.md](./docs/05-进阶与拓展/安全编程/04-模糊测试与漏洞挖掘.md) | AFL/LibFuzzer、CVE |
 
 #### 编程故事与警示
 
@@ -229,10 +238,10 @@
 ├───────────────────────────────────────────────────────────────────────┤
 │                                                                       │
 │  ┌─────────────┐                                                      │
-│  │ C语言基础    │  00-27章：概述→类型→运算符→控制→函数→数组→指针        │
+│  │ C语言基础    │  00-29章：概述→类型→运算符→控制→函数→数组→指针        │
 │  │             │  →字符串→结构体→内存→预处理→可变参数→位操作            │
 │  │             │  →错误处理→时间→文件→多文件→编译链接→库→构建系统       │
-│  │             │  →进程线程→网络→数据结构→算法→OOP                      │
+│  │             │  →进程线程→网络→数据结构→算法→OOP→设计模式            │
 │  └──────┬──────┘                                                      │
 │         │                                                             │
 │         ▼                                                             │
@@ -294,7 +303,7 @@
                         知识点依赖关系（学习前置条件）
 
         ┌──────────────────────────────────────────────────────┐
-        │                     C语言基础 (00-27章)              │
+        │                     C语言基础 (00-29章)              │
         │  00概述 → 01类型 → 02运算符 → 03控制 → 04函数        │
         │     ↓                              ↓                 │
         │  05数组 → 06指针 → 07字符串 → 08结构体 → 09内存       │
@@ -305,7 +314,9 @@
         │     ↓                              ↓                 │
         │  20GCC → 21Makefile → 22CMake → 23进程线程 → 24网络  │
         │     ↓                              ↓                 │
-        │  25数据结构 → 26算法 → 27OOP基础                      │
+        │  25数据结构 → 26算法 → 27OOP基础 → 28OOP进阶          │
+        │     ↓                              ↓                 │
+        │  29设计模式                                           │
         └──────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -411,7 +422,7 @@
 | C++20特性 | C++20参考 | https://en.cppreference.com/w/cpp/20 |
 | 练习平台 | LeetCode | https://leetcode.cn/ |
 | 编码规范 | Google C++ Style | https://google.github.io/styleguide/cppguide.html |
-| ISO标准文档 | std_docs | [docs/std_docs/](./docs/std_docs/) — ISO C (C99/C11/C17/C23) 和 ISO C++ (C++98~C++23) 标准参考文献 |
+| ISO标准文档 | std_docs | [cppreference C](https://en.cppreference.com/w/c) / [cppreference C++](https://en.cppreference.com/w/cpp) |
 
 ---
 
@@ -433,7 +444,7 @@
 
 ```
 code/
-├── c/                                # C语言示例代码（31章目录，160个源文件）
+├── c/                                # C语言示例代码（30章目录）
 │   ├── chapter00-c-overview/         # C语言概述
 │   ├── chapter01-data-types/         # 数据类型与变量
 │   ├── chapter02-operators/          # 运算符与表达式
@@ -462,12 +473,11 @@ code/
 │   ├── chapter25-data-structure/     # 链表与数据结构
 │   ├── chapter26-algorithm/          # 排序与查找算法
 │   ├── chapter27-c-oop-basic/        # C语言面向对象-基础
-│   ├── chapter28-dynamic-loading/    # 动态库加载方式
-│   ├── chapter29-c-oop-advanced/     # C语言面向对象-进阶
-│   ├── chapter30-c-patterns/         # C语言设计模式
+│   ├── chapter28-c-oop-advanced/     # C语言面向对象-进阶
+│   ├── chapter29-c-patterns/         # C语言设计模式
 │   └── CMakeLists.txt
 │
-├── cpp/                              # C++示例代码（39章，163个源文件）
+├── cpp/                              # C++示例代码（35章）
 │   ├── chapter00-cpp-overview/       # C++概述
 │   ├── chapter01-basics/             # 基础特性
 │   ├── chapter02-namespace/          # 命名空间与编码规范
@@ -503,15 +513,11 @@ code/
 │   ├── chapter32-serialization/      # 序列化与日志
 │   ├── chapter33-package-manager/    # 包管理工具
 │   ├── chapter34-practice/           # 实战案例
-│   ├── chapter35-filesystem/         # 文件系统库
-│   ├── chapter36-cpp23/              # C++23新特性
-│   ├── chapter37-memory-model/       # C++内存模型
-│   ├── chapter38-lock-free/          # 无锁编程
 │   └── CMakeLists.txt
 │
 ├── advanced/                         # 高级专题示例代码
-│   ├── ch00-template-metaprogramming/ # 模板元编程与编译期计算（14个源文件）
-│   ├── ch01-high-perf-network/       # 高性能网络与异步IO（14个源文件）
+│   ├── ch00-template-metaprogramming/ # 模板元编程与编译期计算
+│   ├── ch01-high-perf-network/       # 高性能网络与异步IO
 │   └── CMakeLists.txt
 │
 ├── CMakeLists.txt                    # 顶层CMake配置
@@ -752,7 +758,7 @@ build.bat
 
 ## 9. 学习建议
 
-- **基础路径**：C语言基础(00-27) → C++基础(00-34) → 工程实践(00-16)
+- **基础路径**：C语言基础(00-29) → C++基础(00-34) → 工程实践(00-16)
 - **快速路径**：有C语言基础可直接从C++第0章开始
 - **重点章节**：C++第3章（类与对象）、第8章（智能指针）、第9章（移动语义）、第27-28章（多线程）、工程实践第2-3章（设计模式）
 
@@ -762,8 +768,8 @@ build.bat
 
 | 模块 | 章节数 | 文档数 | 代码文件数 |
 |-----|-------|-------|-----------|
-| C语言（含导学） | 28+3 | 31 | 160 |
+| C语言（含导学） | 30+3 | 33 | 152 |
 | C++ | 35 | 35 | 163 |
-| 工程实践（含开发环境） | 12+13 | 25 | — |
-| 问题解答 | 13分类 | 266 | — |
-| 进阶与拓展 | 5子分类 | 37 | 28 |
+| 工程实践（含开发环境） | 15+13 | 28 | — |
+| 问题解答 | 13分类 | 270 | — |
+| 进阶与拓展 | 5子分类 | 44 | 28 |

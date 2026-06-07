@@ -1,8 +1,0 @@
-add_executable(cpp_ch36_01_deep_dive_cpp23_patterns 01_deep_dive_cpp23_patterns.cpp)
-set_target_properties(cpp_ch36_01_deep_dive_cpp23_patterns PROPERTIES CXX_STANDARD 23)
-
-add_executable(cpp_ch36_01_example_cpp23_features 01_example_cpp23_features.cpp)
-set_target_properties(cpp_ch36_01_example_cpp23_features PROPERTIES CXX_STANDARD 23)
-
-add_executable(cpp_ch36_02_example_cpp23_advanced 02_example_cpp23_advanced.cpp)
-set_target_properties(cpp_ch36_02_example_cpp23_advanced PROPERTIES CXX_STANDARD 23)
