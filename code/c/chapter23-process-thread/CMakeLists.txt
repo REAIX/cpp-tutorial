@@ -1,13 +1,13 @@
 find_package(Threads REQUIRED)
 
-add_executable(c_ch24_01_example_fork 01_example_fork.c)
-add_executable(c_ch24_02_example_exec 02_example_exec.c)
-add_executable(c_ch24_03_example_pthread 03_example_pthread.c)
-target_link_libraries(c_ch24_03_example_pthread PRIVATE Threads::Threads)
+add_executable(c_ch23_01_example_fork 01_example_fork.c)
+add_executable(c_ch23_02_example_exec 02_example_exec.c)
+add_executable(c_ch23_03_example_pthread 03_example_pthread.c)
+target_link_libraries(c_ch23_03_example_pthread PRIVATE Threads::Threads)
 
-add_executable(c_ch24_04_example_mutex 04_example_mutex.c)
-target_link_libraries(c_ch24_04_example_mutex PRIVATE Threads::Threads)
+add_executable(c_ch23_04_example_mutex 04_example_mutex.c)
+target_link_libraries(c_ch23_04_example_mutex PRIVATE Threads::Threads)
 
-add_executable(c_ch24_01_deep_dive_ipc 01_deep_dive_ipc.c)
-add_executable(c_ch24_02_deep_dive_thread_patterns 02_deep_dive_thread_patterns.c)
-target_link_libraries(c_ch24_02_deep_dive_thread_patterns PRIVATE Threads::Threads)
+add_executable(c_ch23_01_deep_dive_ipc 01_deep_dive_ipc.c)
+add_executable(c_ch23_02_deep_dive_thread_patterns 02_deep_dive_thread_patterns.c)
+target_link_libraries(c_ch23_02_deep_dive_thread_patterns PRIVATE Threads::Threads)
