@@ -268,7 +268,7 @@ new → operator new → malloc → brk()/mmap() 系统调用
 
 ### 11. 极简总结
 
-**new/delete = C++关键字 + 调用构造/析构 + 可重载 + 抛异常；malloc/free = C函数 + 仅分配内存 + 不调用构造/析构 + 返回void* → 永远不要混用 → 配对使用 → 优先 new/delete + 智能指针 → placement new 在已有内存上构造**
+**new/delete = [C++关键字](../../04-工程实践/16-C++关键字.md) + 调用构造/析构 + 可重载 + 抛异常；malloc/free = C函数 + 仅分配内存 + 不调用构造/析构 + 返回void* → 永远不要混用 → 配对使用 → 优先 new/delete + 智能指针 → placement new 在已有内存上构造**
 
 ***
 

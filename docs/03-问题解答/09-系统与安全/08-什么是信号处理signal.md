@@ -717,6 +717,6 @@ volatile sig_atomic_t SignalHandler::running_ = 1;
 
 ### 相关阅读
 
-- [僵尸进程孤儿进程与守护进程](./07-僵尸进程孤儿进程与守护进程.md)
-- [守护进程创建](./10-守护进程创建.md)
+- [僵尸进程孤儿进程与守护进程](07-僵尸进程孤儿进程与守护进程.md)
+- [守护进程创建](12-守护进程创建.md)
 - [什么是setjmp与longjmp](./02-什么是setjmp与longjmp.md)

@@ -111,6 +111,9 @@
 | 第9章 | [09-算法与数据结构.md](./docs/04-工程实践/09-算法与数据结构.md) | 链表、树、哈希表、排序 |
 | 第10章 | [10-陷阱与技巧.md](./docs/04-工程实践/10-陷阱与技巧.md) | 内存陷阱、并发陷阱、调试技巧 |
 | 第11章 | [11-实战项目.md](./docs/04-工程实践/11-实战项目.md) | 文本编辑器、网络聊天室 |
+| 第12章 | [12-创新实践.md](./docs/04-工程实践/12-创新实践.md) | 创新思维与实践方法 |
+| 第14章 | [14-能力图谱.md](./docs/04-工程实践/14-能力图谱.md) | 技能能力图谱 |
+| 第16章 | [16-C++关键字.md](./docs/04-工程实践/16-C++关键字.md) | C++关键字详解 |
 
 #### 开发环境与IDE
 
@@ -158,24 +161,24 @@
 
 | 章节 | 文档 | 内容概要 | 示例代码 |
 |-----|------|---------|---------|
-| 第0章 | [00-编译期计算基础.md](./docs/05-进阶与拓展/模板元编程/00-编译期计算基础.md) | constexpr/consteval/constinit、编译期if、static_assert | [ch07](./code/advanced/ch07-template-metaprogramming/) |
-| 第1章 | [01-Type-Traits与类型操作.md](./docs/05-进阶与拓展/模板元编程/01-Type-Traits与类型操作.md) | type_traits、类型判断/修改/条件traits、enable_if | [ch07](./code/advanced/ch07-template-metaprogramming/) |
-| 第2章 | [02-SFINAE与替换失败.md](./docs/05-进阶与拓展/模板元编程/02-SFINAE与替换失败.md) | SFINAE原理、函数重载/偏特化/void_t模式 | [ch07](./code/advanced/ch07-template-metaprogramming/) |
-| 第3章 | [03-CRTP与静态多态.md](./docs/05-进阶与拓展/模板元编程/03-CRTP与静态多态.md) | CRTP原理、静态vs动态多态 | [ch07](./code/advanced/ch07-template-metaprogramming/) |
-| 第4章 | [04-模板元编程实战.md](./docs/05-进阶与拓展/模板元编程/04-模板元编程实战.md) | 编译期状态机/JSON解析/正则 | [ch07](./code/advanced/ch07-template-metaprogramming/) |
+| 第0章 | [00-编译期计算基础.md](./docs/05-进阶与拓展/模板元编程/00-编译期计算基础.md) | constexpr/consteval/constinit、编译期if、static_assert | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第1章 | [01-Type-Traits与类型操作.md](./docs/05-进阶与拓展/模板元编程/01-Type-Traits与类型操作.md) | type_traits、类型判断/修改/条件traits、enable_if | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第2章 | [02-SFINAE与替换失败.md](./docs/05-进阶与拓展/模板元编程/02-SFINAE与替换失败.md) | SFINAE原理、函数重载/偏特化/void_t模式 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第3章 | [03-CRTP与静态多态.md](./docs/05-进阶与拓展/模板元编程/03-CRTP与静态多态.md) | CRTP原理、静态vs动态多态 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
+| 第4章 | [04-模板元编程实战.md](./docs/05-进阶与拓展/模板元编程/04-模板元编程实战.md) | 编译期状态机/JSON解析/正则 | [ch00](./code/advanced/ch00-template-metaprogramming/) |
 
 #### 高性能网络
 
 | 章节 | 文档 | 内容概要 | 示例代码 |
 |-----|------|---------|---------|
-| 第0章 | [00-网络编程进阶概述.md](./docs/05-进阶与拓展/高性能网络/00-网络编程进阶概述.md) | C10K问题、5种编程模型 | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第1章 | [01-IO多路复用深入.md](./docs/05-进阶与拓展/高性能网络/01-IO多路复用深入.md) | select/poll/epoll深度对比 | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第2章 | [02-Reactor模式.md](./docs/05-进阶与拓展/高性能网络/02-Reactor模式.md) | 单/多Reactor架构 | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第3章 | [03-Proactor模式与异步IO.md](./docs/05-进阶与拓展/高性能网络/03-Proactor模式与异步IO.md) | Reactor vs Proactor、io_uring | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第4章 | [04-零拷贝与高效数据传输.md](./docs/05-进阶与拓展/高性能网络/04-零拷贝与高效数据传输.md) | sendfile/splice/mmap | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第5章 | [05-高性能协议设计.md](./docs/05-进阶与拓展/高性能网络/05-高性能协议设计.md) | 二进制/文本协议、TLV | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第6章 | [06-高并发服务器架构.md](./docs/05-进阶与拓展/高性能网络/06-高并发服务器架构.md) | 连接管理、M:N线程模型 | [ch08](./code/advanced/ch08-high-perf-network/) |
-| 第7章 | [07-网络性能调优.md](./docs/05-进阶与拓展/高性能网络/07-网络性能调优.md) | TCP参数调优、负载均衡 | [ch08](./code/advanced/ch08-high-perf-network/) |
+| 第0章 | [00-网络编程进阶概述.md](./docs/05-进阶与拓展/高性能网络/00-网络编程进阶概述.md) | C10K问题、5种编程模型 | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第1章 | [01-IO多路复用深入.md](./docs/05-进阶与拓展/高性能网络/01-IO多路复用深入.md) | select/poll/epoll深度对比 | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第2章 | [02-Reactor模式.md](./docs/05-进阶与拓展/高性能网络/02-Reactor模式.md) | 单/多Reactor架构 | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第3章 | [03-Proactor模式与异步IO.md](./docs/05-进阶与拓展/高性能网络/03-Proactor模式与异步IO.md) | Reactor vs Proactor、io_uring | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第4章 | [04-零拷贝与高效数据传输.md](./docs/05-进阶与拓展/高性能网络/04-零拷贝与高效数据传输.md) | sendfile/splice/mmap | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第5章 | [05-高性能协议设计.md](./docs/05-进阶与拓展/高性能网络/05-高性能协议设计.md) | 二进制/文本协议、TLV | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第6章 | [06-高并发服务器架构.md](./docs/05-进阶与拓展/高性能网络/06-高并发服务器架构.md) | 连接管理、M:N线程模型 | [ch01](./code/advanced/ch01-high-perf-network/) |
+| 第7章 | [07-网络性能调优.md](./docs/05-进阶与拓展/高性能网络/07-网络性能调优.md) | TCP参数调优、负载均衡 | [ch01](./code/advanced/ch01-high-perf-network/) |
 
 #### 系统级编程
 
@@ -277,7 +280,7 @@
 │                              ▼                                        │
 │  ┌─────────────────────────────────────────────────────────────┐     │
 │  │                    工程实践                                    │     │
-│  │              00-15章：编码规范、设计模式、调试优化               │     │
+│  │              00-16章：编码规范、设计模式、调试优化               │     │
 │  └─────────────────────────────────────────────────────────────┘     │
 │                                                                       │
 └───────────────────────────────────────────────────────────────────────┘
@@ -359,14 +362,14 @@
         └────────────────────────┼─────────────────────────────┘
                                  ▼
         ┌──────────────────────────────────────────────────────┐
-        │                    工程实践 (00-15章)                  │
+        │                    工程实践 (00-16章)                  │
         │  00编码规范 → 01注释 → 02SOLID → 03设计模式            │
         │     ↓                              ↓                   │
-        │  04设计模式进阶 → 05关键字 → 06单元测试 → 07调试        │
+        │  04设计模式进阶 → 05单元测试 → 06调试 → 07代码审查      │
         │     ↓                              ↓                   │
-        │  08代码审查 → 09性能优化 → 10算法 → 11陷阱与技巧        │
+        │  08性能优化 → 09算法 → 10陷阱与技巧 → 11实战项目        │
         │     ↓                              ↓                   │
-        │  12实战项目 → 13创新实践 → 14思维方法论 → 15能力图谱    │
+        │  12创新实践 → 14能力图谱 → 16C++关键字                  │
         └──────────────────────────────────────────────────────┘
 ```
 
@@ -507,8 +510,8 @@ code/
 │   └── CMakeLists.txt
 │
 ├── advanced/                         # 高级专题示例代码
-│   ├── ch07-template-metaprogramming/ # 模板元编程与编译期计算（14个源文件）
-│   ├── ch08-high-perf-network/       # 高性能网络与异步IO（14个源文件）
+│   ├── ch00-template-metaprogramming/ # 模板元编程与编译期计算（14个源文件）
+│   ├── ch01-high-perf-network/       # 高性能网络与异步IO（14个源文件）
 │   └── CMakeLists.txt
 │
 ├── CMakeLists.txt                    # 顶层CMake配置
@@ -749,7 +752,7 @@ build.bat
 
 ## 9. 学习建议
 
-- **基础路径**：C语言基础(00-27) → C++基础(00-34) → 工程实践(00-15)
+- **基础路径**：C语言基础(00-27) → C++基础(00-34) → 工程实践(00-16)
 - **快速路径**：有C语言基础可直接从C++第0章开始
 - **重点章节**：C++第3章（类与对象）、第8章（智能指针）、第9章（移动语义）、第27-28章（多线程）、工程实践第2-3章（设计模式）
 

@@ -621,7 +621,7 @@ set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 ### 相关阅读
 
 - [什么是字节序Endianness](27-什么是字节序Endianness.md)
-- [跨平台是什么意思](./00-跨平台是什么意思.md)
+- [跨平台是什么意思](00-跨平台与可移植性.md)
 - [LLVM与Clang](25-LLVM与Clang.md)
 
 ***

@@ -714,7 +714,7 @@ strace -f -T -tt -o trace.log ./myapp
 
 ### 7. 相关章节
 
-- [LLVM与Clang关系与使用指南](../03-问题解答/10-工程实践/26-LLVM与Clang.md) — LLVM架构/Clang前端/IR语法/工具链/Pass开发
+- [LLVM与Clang关系与使用指南](../../03-问题解答/10-工程实践/25-LLVM与Clang.md) — LLVM架构/Clang前端/IR语法/工具链/Pass开发
 - [GCC-G++编译器深度使用指南](07-GCC编译器基础.md) — GCC编译参数、优化级别、分析工具
 - [GDB调试器配置与使用](09-GDB调试器配置与使用.md) — GDB配置、断点、多线程调试
 - [VS-Code开发环境完全配置指南](00-VSCode核心配置.md) — clangd配置与使用

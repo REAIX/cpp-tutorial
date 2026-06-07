@@ -387,6 +387,6 @@ GCC之前提供了`__sync_fetch_and_add`等内建函数，C11的`<stdatomic.h>`�
 
 ### 相关阅读
 
-- [什么是未定义行为](./07-什么是未定义行为.md)
+- [什么是未定义行为](../11-常见错误与陷阱/08-未定义行为大全.md)
 - [volatile关键字](18-volatile关键字.md)
-- [volatile在Cpp中的状态](./13-volatile在Cpp中的状态.md)
+- [volatile在Cpp中的状态](18-volatile关键字.md)

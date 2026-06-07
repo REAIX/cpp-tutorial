@@ -550,6 +550,6 @@ ID、属性、任务函数、带参数
 
 - [pthread-create底层原理](08-pthread-create底层原理.md)
 - [pthread-create函数指针参数](10-pthread-create函数指针参数.md)
-- [多线程通讯](./11-多线程通讯.md)
+- [多线程通讯](23-多线程通讯与数据获取.md)
 
 ***
