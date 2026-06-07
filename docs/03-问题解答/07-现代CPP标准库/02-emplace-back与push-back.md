@@ -1,5 +1,5 @@
-﻿# emplace_back 与 push_back 的区别
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# emplace_back 与 push_back 的区别
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 > "先在走廊组装家具再搬进房间，还是直接在房间里组装"——emplace_back 原地构造，省去中间搬运。
 
@@ -293,7 +293,7 @@ v.emplace_back(std::vector<int>{1, 2, 3});  // 显式构造
 
 ### 7. 与 RVO/NRVO 的关系
 
-[RVO与NRVO返回值优化](../04-CPP核心特性/16-RVO与NRVO返回值优化.md) 讲过 RVO/NRVO 的原理。两者都致力于消除不必要的拷贝，但作用层面不同：
+[RVO与NRVO返回值优化](../04-CPP核心特性/31-RVO与NRVO返回值优化.md) 讲过 RVO/NRVO 的原理。两者都致力于消除不必要的拷贝，但作用层面不同：
 
 | 维度 | RVO/NRVO | emplace_back |
 |------|----------|-------------|
@@ -341,8 +341,8 @@ v.emplace_back("Direct");
 
 ### 相关阅读
 
-- [STL容器底层实现](./00-STL容器底层实现.md)
-- [optional与nullptr](./03-optional与nullptr.md)
-- [variant与union](./04-variant与union.md)
+- [STL容器底层实现](./01-STL容器底层实现.md)
+- [optional与nullptr](./07-optional与nullptr.md)
+- [variant与union](./09-variant与union.md)
 
 ***

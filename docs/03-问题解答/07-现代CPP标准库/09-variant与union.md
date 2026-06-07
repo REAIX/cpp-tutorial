@@ -1,5 +1,5 @@
-﻿# variant 与 union 的区别
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# variant 与 union 的区别
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 ### 1. 核心要义
 
@@ -285,8 +285,8 @@ int main() {
 
 ### 相关阅读
 
-- [optional与nullptr](./03-optional与nullptr.md)
-- [什么是std-any](./16-什么是std-any.md)
+- [optional与nullptr](./07-optional与nullptr.md)
+- [什么是std-any](./10-什么是std-any.md)
 - [expected与optional](./08-expected与optional.md)
 
 ***

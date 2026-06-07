@@ -1,5 +1,5 @@
-﻿# 什么是std::array与C数组的区别
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# 什么是std::array与C数组的区别
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 > "std::array is a C array that grew up — same performance, but it knows its own size and plays well with the STL." — Scott Meyers
 
@@ -551,8 +551,8 @@ static_assert(sizeof(std::array<double, 10>) == sizeof(double[10]));
 
 ### 相关阅读
 
-- [STL容器底层实现](./00-STL容器底层实现.md)
-- [std-span](./07-std-span.md)
-- [emplace-back与push-back](./01-emplace-back与push-back.md)
+- [STL容器底层实现](./01-STL容器底层实现.md)
+- [std-span](./05-std-span.md)
+- [emplace-back与push-back](./02-emplace-back与push-back.md)
 
 ***

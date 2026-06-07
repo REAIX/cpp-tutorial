@@ -1,5 +1,5 @@
-﻿# std::span 详解
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# std::span 详解
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 ### 1. 本质速解
 
@@ -320,8 +320,8 @@ int main() {
 
 ### 相关阅读
 
-- [string-view与const-string引用](./02-string-view与const-string引用.md)
-- [STL容器底层实现](./00-STL容器底层实现.md)
-- [std-array与C数组](./18-std-array与C数组.md)
+- [string-view与const-string引用](./04-string-view与const-string引用.md)
+- [STL容器底层实现](./01-STL容器底层实现.md)
+- [std-array与C数组](./03-std-array与C数组.md)
 
 ***

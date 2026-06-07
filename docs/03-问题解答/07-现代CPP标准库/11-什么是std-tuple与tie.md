@@ -1,5 +1,5 @@
-﻿# 什么是std::tuple与tie
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# 什么是std::tuple与tie
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 > "A tuple is a fixed-size collection of heterogeneous values — the Swiss Army knife of C++ type machinery." — Stephan T. Lavavej
 
@@ -519,7 +519,7 @@ int main() {
 ### 相关阅读
 
 - [什么是结构化绑定Structured-Binding](./12-什么是结构化绑定Structured-Binding.md)
-- [variant与union](./04-variant与union.md)
-- [STL容器底层实现](./00-STL容器底层实现.md)
+- [variant与union](./09-variant与union.md)
+- [STL容器底层实现](./01-STL容器底层实现.md)
 
 ***

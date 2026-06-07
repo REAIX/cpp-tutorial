@@ -1,5 +1,5 @@
-﻿# expected 与 optional 的区别
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件系统](../../02-CPP/19-文件系统库.md)
+# expected 与 optional 的区别
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
 
 ### 1. 要义概览
 
@@ -332,8 +332,8 @@ int main() {
 
 ### 相关阅读
 
-- [optional与nullptr](./03-optional与nullptr.md)
-- [variant与union](./04-variant与union.md)
-- [什么是C++23新特性](./15-什么是C++23新特性.md)
+- [optional与nullptr](./07-optional与nullptr.md)
+- [variant与union](./09-variant与union.md)
+- [什么是C++23新特性](./16-什么是C++23新特性.md)
 
 ***
