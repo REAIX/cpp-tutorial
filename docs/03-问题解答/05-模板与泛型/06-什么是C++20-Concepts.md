@@ -1,5 +1,5 @@
 ﻿# 什么是C++20 Concepts
-> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)、[模板进阶](../../02-CPP/11-模板进阶.md)、[Concepts](../../02-CPP/23-Concepts.md)
+> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)、[模板进阶](../../02-CPP/11-模板进阶.md)、[Concepts](../../02-CPP/22-Concepts.md)
 
 > "Concepts 让编译器的错误信息从天书变成了人话。"
 
@@ -622,7 +622,7 @@ int main() {
 ### 相关阅读
 
 - [SFINAE与TypeTraits](./00-SFINAE与TypeTraits.md)
-- [CRTP模式与静态多态](../04-CPP核心特性/17-CRTP模式与静态多态.md)
+- [CRTP模式与静态多态](../04-CPP核心特性/36-CRTP模式与静态多态.md)
 - [什么是标签分发Tag-Dispatch](./05-什么是标签分发Tag-Dispatch.md)
 
 ***

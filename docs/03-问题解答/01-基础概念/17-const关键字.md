@@ -200,6 +200,6 @@ int arr[square(3)];                   // OK：编译期求值
 
 ### 相关阅读
 
-- [inline关键字的真实含义](./14-inline关键字的真实含义.md)
-- [头文件守卫与pragmaonce](./16-头文件守卫与pragmaonce.md)
-- [volatile关键字](./12-volatile关键字.md)
+- [inline关键字的真实含义](19-inline关键字的真实含义.md)
+- [头文件守卫与pragmaonce](21-头文件守卫与pragmaonce.md)
+- [volatile关键字](18-volatile关键字.md)

@@ -1,5 +1,5 @@
 ﻿# SFINAE 与 Type Traits
-> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)、[模板进阶](../../02-CPP/11-模板进阶.md)、[Concepts](../../02-CPP/23-Concepts.md)
+> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)、[模板进阶](../../02-CPP/11-模板进阶.md)、[Concepts](../../02-CPP/22-Concepts.md)
 
 ### 1. 本质速解
 
@@ -529,7 +529,7 @@ int main() {
 ### 相关阅读
 
 - [什么是C++20-Concepts](./06-什么是C++20-Concepts.md)
-- [decltype与auto](../04-CPP核心特性/33-decltype与auto.md)
-- [什么是完美转发Perfect-Forwarding](../04-CPP核心特性/30-什么是完美转发Perfect-Forwarding.md)
+- [decltype与auto](../04-CPP核心特性/24-decltype与auto.md)
+- [什么是完美转发Perfect-Forwarding](../04-CPP核心特性/20-什么是完美转发Perfect-Forwarding.md)
 
 ***

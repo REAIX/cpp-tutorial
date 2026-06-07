@@ -562,6 +562,6 @@ int main() {
 
 ### 相关阅读
 
-- [什么是initializer-list](./32-什么是initializer-list.md)
-- [explicit关键字](./03-explicit关键字.md)
-- [构造函数成员初始化列表](./01-构造函数成员初始化列表.md)
+- [什么是initializer-list](23-什么是initializer-list.md)
+- [explicit关键字](05-explicit关键字.md)
+- [构造函数成员初始化列表](03-构造函数成员初始化列表.md)

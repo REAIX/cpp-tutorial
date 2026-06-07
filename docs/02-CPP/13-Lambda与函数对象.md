@@ -1105,4 +1105,4 @@ auto f = [&]() { return x; };  // x 销毁后调用 f 是 UB
 
 ### 5. 相关章节
 
-- [std::function与函数指针与Lambda的区别](../03-问题解答/06-并发编程/29-std-function与函数指针与Lambda.md) — 性能/灵活性/适用场景对比
+- [std::function与函数指针与Lambda的区别](../03-问题解答/06-并发编程/27-std-function与函数指针与Lambda.md) — 性能/灵活性/适用场景对比

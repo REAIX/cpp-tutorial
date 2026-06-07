@@ -263,6 +263,6 @@ void func() {
 
 ### 相关阅读
 
-- [extern-C与动态库导出](./09-extern-C与动态库导出.md)
-- [static关键字](./10-static关键字.md)
-- [头文件守卫与pragmaonce](./16-头文件守卫与pragmaonce.md)
+- [extern-C与动态库导出](15-extern-C与动态库导出.md)
+- [static关键字](16-static关键字.md)
+- [头文件守卫与pragmaonce](21-头文件守卫与pragmaonce.md)

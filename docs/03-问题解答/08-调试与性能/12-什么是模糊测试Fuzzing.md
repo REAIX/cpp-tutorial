@@ -1,5 +1,5 @@
 ﻿# 什么是模糊测试Fuzzing
-> 📖 相关章节：[调试技巧](../../04-工程实践/07-调试技巧.md)、[性能优化](../../04-工程实践/09-性能优化.md)
+> 📖 相关章节：[调试技巧](../../04-工程实践/06-调试技巧.md)、[性能优化](../../04-工程实践/08-性能优化.md)
 
 > "Fuzzing 是用随机数据暴力破解程序防御的自动化艺术。" —— Michal Zalewski
 
@@ -798,5 +798,5 @@ python infra/helper.py run_fuzzer my-project my_fuzz_target
 ### 相关阅读
 
 - [什么是基准测试Benchmarking](./10-什么是基准测试Benchmarking.md)
-- [什么是性能剖析Profiling](./08-什么是性能剖析Profiling.md)
-- [CPP工具链](./02-CPP工具链.md)
+- [什么是性能剖析Profiling](09-什么是性能剖析Profiling.md)
+- [CPP工具链](03-CPP工具链.md)

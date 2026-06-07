@@ -155,5 +155,5 @@ FILE *fp __attribute__((cleanup(fclose_auto))) = fopen(...);
 ### 相关阅读
 
 - [什么是零开销抽象Zero-overhead](./32-什么是零开销抽象Zero-overhead.md)
-- [static关键字](./10-static关键字.md)
+- [static关键字](16-static关键字.md)
 - [goto是什么](./25-goto是什么.md)

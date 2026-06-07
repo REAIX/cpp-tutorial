@@ -36,7 +36,7 @@
 - [GCC/G++编译器详解](21-GCC与G++编译器详解.md)
 
 ## 后续内容
-- [CMake构建系统](23-CMake构建系统.md)
+- [CMake构建系统](22-CMake构建系统.md)
 ---
 
 ## 目录
@@ -842,12 +842,12 @@ clean:
 
 ## 9. 相关链接
 
-**上一章：** [第21章：GCC/G++编译器详解](21-GCC与G++编译器.md)\
-**下一章：** [第23章：CMake构建系统](23-CMake构建系统.md)
+**上一章：** [第21章：GCC/G++编译器详解](20-GCC与G++编译器.md)\
+**下一章：** [第23章：CMake构建系统](22-CMake构建系统.md)
 
 ***
 
 ### 1. 相关章节
 
-- [CMake构建系统](../../04-工程实践/开发环境/03-CMake基础入门.md) — CMake vs Make对比、CMakeLists.txt写法
-- [VSCode核心配置](../../04-工程实践/开发环境/00-VSCode核心配置.md) — tasks.json中调用make构建
+- [CMake构建系统](../04-工程实践/开发环境/03-CMake基础入门.md) — CMake vs Make对比、CMakeLists.txt写法
+- [VSCode核心配置](../04-工程实践/开发环境/00-VSCode核心配置.md) — tasks.json中调用make构建

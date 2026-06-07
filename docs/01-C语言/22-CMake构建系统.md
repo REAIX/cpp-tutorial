@@ -33,9 +33,9 @@
 > （君子不是因为生来与别人不同，而是善于借助外力；善于使用CMake，可以让编译效率翻倍。）
 
 ## 前置知识
-- [Makefile与构建系统](22-Makefile与构建系统.md)
+- [Makefile与构建系统](21-Makefile与构建系统.md)
 ## 后续内容
-- [进程与线程](24-进程与线程.md)
+- [进程与线程](23-进程与线程.md)
 ***
 
 ## 目录
@@ -1189,15 +1189,15 @@ ctest --preset debug
 
 ## 11. 相关链接
 
-**上一章：** [第22章：Makefile与构建系统](22-Makefile与构建系统.md)\
-**下一章：** [第24章：进程与线程](24-进程与线程.md)
+**上一章：** [第22章：Makefile与构建系统](21-Makefile与构建系统.md)\
+**下一章：** [第24章：进程与线程](23-进程与线程.md)
 
 ***
 
 ### 1. 相关章节
 
-- [CMake与构建系统实战配置](../../04-工程实践/开发环境/03-CMake基础入门.md) — CMakeLists.txt完全写法、外部库4种配置方式
-- [VS Code开发环境完全配置指南](../../04-工程实践/开发环境/00-VSCode核心配置.md) — VS Code + CMake Tools完整工作流
-- [CLion开发环境配置](../../04-工程实践/开发环境/06-CLion开发环境配置.md) — CLion + CMake配合使用
-- [Visual Studio开发环境配置指南](../../04-工程实践/开发环境/05-VisualStudio开发环境配置.md) — VS打开CMake项目
+- [CMake与构建系统实战配置](../04-工程实践/开发环境/03-CMake基础入门.md) — CMakeLists.txt完全写法、外部库4种配置方式
+- [VS Code开发环境完全配置指南](../04-工程实践/开发环境/00-VSCode核心配置.md) — VS Code + CMake Tools完整工作流
+- [CLion开发环境配置](../04-工程实践/开发环境/06-CLion开发环境配置.md) — CLion + CMake配合使用
+- [Visual Studio开发环境配置指南](../04-工程实践/开发环境/05-VisualStudio开发环境配置.md) — VS打开CMake项目
 

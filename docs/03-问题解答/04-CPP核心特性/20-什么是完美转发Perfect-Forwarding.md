@@ -605,6 +605,6 @@ int main() {
 
 ### 相关阅读
 
-- [左值右值与将亡值](./21-左值右值与将亡值.md)
-- [std-move与std-forward](./22-std-move与std-forward.md)
-- [decltype与auto](./33-decltype与auto.md)
+- [左值右值与将亡值](18-左值右值与将亡值.md)
+- [std-move与std-forward](19-std-move与std-forward.md)
+- [decltype与auto](24-decltype与auto.md)

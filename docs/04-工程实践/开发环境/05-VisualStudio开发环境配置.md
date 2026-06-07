@@ -1,6 +1,6 @@
-﻿# Visual Studio C/C++ 开发环境配置指南
+# Visual Studio C/C++ 开发环境配置指南
 
-> **前置阅读**：如果你还没有安装Visual Studio，请先阅读 [FAQ-138：开发环境配置详解](../03-问题解答/01-基础概念/28-开发环境配置.md) 中"方案B：Visual Studio 2022"部分。本文档假设你已经安装好了Visual Studio，需要学习如何深度配置和使用。
+> **前置阅读**：如果你还没有安装Visual Studio，请先阅读 [FAQ-138：开发环境配置详解](../../03-问题解答/01-基础概念/33-开发环境配置.md) 中"方案B：Visual Studio 2022"部分。本文档假设你已经安装好了Visual Studio，需要学习如何深度配置和使用。
 
 ## 1. Visual Studio 项目文件体系
 

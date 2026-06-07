@@ -732,5 +732,5 @@ int main() {
 ### 相关阅读
 
 - [SFINAE与TypeTraits](../05-模板与泛型/00-SFINAE与TypeTraits.md)
-- [什么是完美转发Perfect-Forwarding](./30-什么是完美转发Perfect-Forwarding.md)
-- [std-move与std-forward](./22-std-move与std-forward.md)
+- [什么是完美转发Perfect-Forwarding](20-什么是完美转发Perfect-Forwarding.md)
+- [std-move与std-forward](19-std-move与std-forward.md)

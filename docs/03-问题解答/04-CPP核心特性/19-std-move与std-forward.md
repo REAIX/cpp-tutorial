@@ -402,6 +402,6 @@ int main() {
 
 ### 相关阅读
 
-- [左值右值与将亡值](./21-左值右值与将亡值.md)
-- [什么是完美转发Perfect-Forwarding](./30-什么是完美转发Perfect-Forwarding.md)
-- [Rule-of-Five与Rule-of-Zero](./12-Rule-of-Five与Rule-of-Zero.md)
+- [左值右值与将亡值](18-左值右值与将亡值.md)
+- [什么是完美转发Perfect-Forwarding](20-什么是完美转发Perfect-Forwarding.md)
+- [Rule-of-Five与Rule-of-Zero](29-Rule-of-Five与Rule-of-Zero.md)

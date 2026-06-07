@@ -501,6 +501,6 @@ func(obj);  // 能找到 NS::func！即使没有 using
 
 ### 相关阅读
 
-- [static关键字](../01-基础概念/10-static关键字.md)
+- [static关键字](../01-基础概念/16-static关键字.md)
 - [什么是ODR单定义规则](../03-编译与链接/01-什么是ODR单定义规则.md)
 - [什么是名称修饰Name-Mangling](../03-编译与链接/09-什么是名称修饰Name-Mangling.md)

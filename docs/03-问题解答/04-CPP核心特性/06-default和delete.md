@@ -4,8 +4,8 @@
 > **📖 本文定位**：聚焦 =default/=delete 语法本身，包括语法规则、使用场景、与编译器默认行为的关系
 >
 > **🔗 相关阅读**：
-> - [Rule of Five 与 Rule of Zero](12-Rule-of-Five与Rule-of-Zero.md) — 聚焦资源管理类的五大特殊成员函数设计，包括 copy-and-swap 惯用法、noexcept 重要性、移动语义
-> - [三法则与五法则](36-三法则与五法则.md) — 聚焦法则的系统性讲解，包括法则演进（三→五→零）、零法则失效场景、继承中的特殊成员函数、实战检查清单
+> - [Rule of Five 与 Rule of Zero](29-Rule-of-Five与Rule-of-Zero.md) — 聚焦资源管理类的五大特殊成员函数设计，包括 copy-and-swap 惯用法、noexcept 重要性、移动语义
+> - [三法则与五法则](30-三法则与五法则.md) — 聚焦法则的系统性讲解，包括法则演进（三→五→零）、零法则失效场景、继承中的特殊成员函数、实战检查清单
 
 ### 1. 一句话结论
 
@@ -416,6 +416,6 @@ public:
 
 ### 相关阅读
 
-- [Rule-of-Five与Rule-of-Zero](./12-Rule-of-Five与Rule-of-Zero.md)
-- [三法则与五法则](./36-三法则与五法则.md)
-- [构造函数成员初始化列表](./01-构造函数成员初始化列表.md)
+- [Rule-of-Five与Rule-of-Zero](29-Rule-of-Five与Rule-of-Zero.md)
+- [三法则与五法则](30-三法则与五法则.md)
+- [构造函数成员初始化列表](03-构造函数成员初始化列表.md)

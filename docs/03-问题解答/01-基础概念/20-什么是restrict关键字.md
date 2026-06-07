@@ -328,6 +328,6 @@ C++有引用语义、类、模板等复杂特性，restrict的语义在C++中难
 
 ### 相关阅读
 
-- [volatile关键字](./12-volatile关键字.md)
+- [volatile关键字](18-volatile关键字.md)
 - [什么是缓存命中率](./04-什么是缓存命中率.md)
-- [什么是开销Overhead](./03-什么是开销Overhead.md)
+- [什么是开销Overhead](10-什么是开销Overhead.md)

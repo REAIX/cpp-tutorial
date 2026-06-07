@@ -1,5 +1,5 @@
 ﻿# latch 与 barrier 的区别
-> 📖 相关章节：[多线程基础](../../02-CPP/29-多线程基础.md)、[线程同步](../../02-CPP/30-线程同步.md)、[原子操作](../../02-CPP/31-原子操作与异步编程.md)、[无锁编程](../../02-CPP/33-无锁编程.md)
+> 📖 相关章节：[多线程基础](../../02-CPP/27-多线程基础.md)、[线程同步](../../02-CPP/28-线程同步.md)、[原子操作](../../02-CPP/29-原子操作与异步编程.md)、[无锁编程](../../02-CPP/33-无锁编程.md)
 
 ### 1. 先抓核心
 
@@ -336,8 +336,8 @@ int main() {
 
 ### 相关阅读
 
-- [什么是条件变量condition-variable](./26-什么是条件变量condition-variable.md)
-- [什么是信号量Semaphore](./27-什么是信号量Semaphore.md)
-- [jthread与thread](./20-jthread与thread.md)
+- [什么是条件变量condition-variable](16-什么是条件变量condition-variable.md)
+- [什么是信号量Semaphore](17-什么是信号量Semaphore.md)
+- [jthread与thread](25-jthread与thread.md)
 
 ***

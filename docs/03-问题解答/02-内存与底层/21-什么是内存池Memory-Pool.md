@@ -864,4 +864,4 @@ int main() {
 ### 相关阅读
 
 - [new/delete与malloc/free](./07-new-delete与malloc-free.md)
-- [什么是内存映射mmap](./17-什么是内存映射mmap.md)
+- [什么是内存映射mmap](20-什么是内存映射mmap.md)

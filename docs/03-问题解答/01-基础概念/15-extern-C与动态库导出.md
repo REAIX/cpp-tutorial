@@ -187,6 +187,6 @@ API int multiply(int a, int b);
 
 ### 相关阅读
 
-- [extern关键字](./08-extern关键字.md)
-- [头文件守卫与pragmaonce](./16-头文件守卫与pragmaonce.md)
-- [inline关键字的真实含义](./14-inline关键字的真实含义.md)
+- [extern关键字](14-extern关键字.md)
+- [头文件守卫与pragmaonce](21-头文件守卫与pragmaonce.md)
+- [inline关键字的真实含义](19-inline关键字的真实含义.md)

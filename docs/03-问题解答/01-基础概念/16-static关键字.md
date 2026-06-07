@@ -323,6 +323,6 @@ namespace {
 
 ### 相关阅读
 
-- [什么是RAII](./05-什么是RAII.md)
+- [什么是RAII](12-什么是RAII.md)
 - [什么是零开销抽象Zero-overhead](./32-什么是零开销抽象Zero-overhead.md)
-- [extern关键字](./08-extern关键字.md)
+- [extern关键字](14-extern关键字.md)

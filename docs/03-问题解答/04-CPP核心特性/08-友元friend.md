@@ -607,6 +607,6 @@ void debugPrintState(const ComplicatedAlgorithm& algo) {
 
 ### 相关阅读
 
-- [运算符重载格式](./05-运算符重载格式.md)
+- [运算符重载格式](07-运算符重载格式.md)
 - [CPP命名空间与库打包](./00-CPP命名空间与库打包.md)
-- [override与final关键字](./07-override与final关键字.md)
+- [override与final关键字](09-override与final关键字.md)

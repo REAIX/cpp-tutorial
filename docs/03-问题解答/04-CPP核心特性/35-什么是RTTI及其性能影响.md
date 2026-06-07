@@ -319,8 +319,8 @@ void process(Base* obj) {
 
 **相关 FAQ**：
 
-- **[FAQ 18 虚函数表 vtable 详解](../02-内存与底层/03-虚函数表vtable.md)**：RTTI 的 type_info 指针存储在 vtable 中，vtable 是 RTTI 的基础设施
-- **[FAQ 50 C++ 四种类型转换](../04-CPP核心特性/08-C++四种类型转换.md)**：dynamic_cast 是四种类型转换之一，依赖 RTTI 实现
+- **[FAQ 18 虚函数表 vtable 详解](../02-内存与底层/10-虚函数表vtable.md)**：RTTI 的 type_info 指针存储在 vtable 中，vtable 是 RTTI 的基础设施
+- **[FAQ 50 C++ 四种类型转换](10-C++四种类型转换.md)**：dynamic_cast 是四种类型转换之一，依赖 RTTI 实现
 
 **关系图**：
 
@@ -452,6 +452,6 @@ int main() {
 
 ### 相关阅读
 
-- [动态绑定与静态绑定](./10-动态绑定与静态绑定.md)
-- [CRTP模式与静态多态](./17-CRTP模式与静态多态.md)
-- [C++四种类型转换](./08-C++四种类型转换.md)
+- [动态绑定与静态绑定](12-动态绑定与静态绑定.md)
+- [CRTP模式与静态多态](36-CRTP模式与静态多态.md)
+- [C++四种类型转换](10-C++四种类型转换.md)

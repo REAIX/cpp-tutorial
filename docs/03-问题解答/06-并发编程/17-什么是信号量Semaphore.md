@@ -1,5 +1,5 @@
 ﻿# 什么是信号量Semaphore
-> 📖 相关章节：[多线程基础](../../02-CPP/29-多线程基础.md)、[线程同步](../../02-CPP/30-线程同步.md)、[原子操作](../../02-CPP/31-原子操作与异步编程.md)、[无锁编程](../../02-CPP/33-无锁编程.md)
+> 📖 相关章节：[多线程基础](../../02-CPP/27-多线程基础.md)、[线程同步](../../02-CPP/28-线程同步.md)、[原子操作](../../02-CPP/29-原子操作与异步编程.md)、[无锁编程](../../02-CPP/33-无锁编程.md)
 
 > 信号量是并发编程中最经典的同步原语——从 Dijkstra 的 P/V 操作到 C++20 的 counting_semaphore，它始终是资源管理的基石。
 
@@ -513,8 +513,8 @@ int main() {
 
 ### 相关阅读
 
-- [什么是条件变量condition-variable](./26-什么是条件变量condition-variable.md)
-- [latch与barrier](./22-latch与barrier.md)
-- [什么是future与promise](./28-什么是future与promise.md)
+- [什么是条件变量condition-variable](16-什么是条件变量condition-variable.md)
+- [latch与barrier](30-latch与barrier.md)
+- [什么是future与promise](26-什么是future与promise.md)
 
 ***

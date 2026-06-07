@@ -404,6 +404,6 @@ bool b2 = p ? true : false;  // OK：三元运算符的条件部分
 
 ### 相关阅读
 
-- [构造函数成员初始化列表](./01-构造函数成员初始化列表.md)
-- [什么是统一初始化Uniform-Initialization](./31-什么是统一初始化Uniform-Initialization.md)
-- [什么是initializer-list](./32-什么是initializer-list.md)
+- [构造函数成员初始化列表](03-构造函数成员初始化列表.md)
+- [什么是统一初始化Uniform-Initialization](22-什么是统一初始化Uniform-Initialization.md)
+- [什么是initializer-list](23-什么是initializer-list.md)
