@@ -60,7 +60,7 @@ void demo_performance_comparison() {
     };
 
     auto test_iteration = [&](auto& container, const std::string& name) {
-        volatile long long sum = 0;
+        volatile long long sum = 0;  // volatile 防止优化消除, 生产级基准测试建议用 Google Benchmark
         auto start = std::chrono::high_resolution_clock::now();
         for (const auto& x : container) sum += x;
         auto end = std::chrono::high_resolution_clock::now();

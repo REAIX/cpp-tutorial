@@ -47,6 +47,8 @@ void demo_pipe_ipc(void) {
     DWORD bytesRead;
     ReadFile(hRead, buffer, sizeof(buffer) - 1, &bytesRead, NULL);
     printf("[模拟子进程] 从管道读取: \"%s\" (%lu 字节)\n", buffer, bytesRead);
+    // 注意: Windows 版本未创建子进程, 仅在同一进程中演示管道读写
+    // 实际 IPC 应使用 CreateProcess 创建子进程, 并通过管道通信
     CloseHandle(hRead);
 #else
     int pipefd[2];

@@ -107,14 +107,13 @@ static int ex_stack_top = 0;
 #define CATCH_NESTED(e) \
         } else { \
             ex_stack[_stack_idx].active = 0; \
-            ex_stack_top--; \
             (e) = ex_stack[_stack_idx].last_exception; \
             (e).code = _ex_code;
 
 #define ENDTRY_NESTED \
-            ex_stack[_stack_idx].active = 0; \
-            ex_stack_top--; \
         } \
+        ex_stack[_stack_idx].active = 0; \
+        ex_stack_top--; \
     } while(0)
 
 #define THROW_NESTED(err_code, msg) do { \

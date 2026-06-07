@@ -8,15 +8,12 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <filesystem>
 
 const std::string TEST_DIR = "test_io_data/";
 
 void ensure_test_dir() {
-#ifdef _WIN32
-    system("if not exist test_io_data mkdir test_io_data");
-#else
-    system("mkdir -p test_io_data");
-#endif
+    std::filesystem::create_directories(TEST_DIR);
 }
 
 void demo_ofstream_write() {

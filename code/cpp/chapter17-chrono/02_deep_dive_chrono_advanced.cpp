@@ -135,6 +135,7 @@ void demo_time_zone_concept() {
     std::time_t now_time = std::chrono::system_clock::to_time_t(now);
 
     std::cout << "1. UTC 时间:\n";
+    // 注意: std::gmtime/std::localtime 非线程安全! 多线程环境应使用对应的 _r/_s 版本
     std::tm* utc_tm = std::gmtime(&now_time);
     char buf[64];
     std::strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", utc_tm);

@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <math.h>
 
 #ifdef NDEBUG
 #define REQUIRE(cond, msg) ((void)0)
@@ -74,7 +75,7 @@ double safe_array_get(const SafeArray *arr, int index) {
 
     double val = arr->data[index];
 
-    ENSURE(1, "返回值是数组中的元素");
+    ENSURE(!isnan(val), "返回值是有效数字");
     return val;
 }
 

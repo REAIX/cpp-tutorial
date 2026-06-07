@@ -230,8 +230,9 @@ public:
             int ret = ::select(static_cast<int>(max_fd + 1),
                                &read_fds, &write_fds, &error_fds, &tv);
 
-            // 3. 分发事件
+            // 3. 分发事件 (先收集就绪channel, 再分发, 避免回调中修改channels_导致迭代器失效)
             if (ret > 0) {
+                std::vector<Channel*> active_channels;
                 for (auto& [fd, channel] : channels_) {
                     int revents = Channel::kNoneEvent;
                     if (FD_ISSET(fd, &read_fds))  revents |= Channel::kReadEvent;
@@ -240,8 +241,11 @@ public:
 
                     if (revents != Channel::kNoneEvent) {
                         channel->set_revents(revents);
-                        channel->handle_event();
+                        active_channels.push_back(channel);
                     }
+                }
+                for (auto* channel : active_channels) {
+                    channel->handle_event();
                 }
             }
 

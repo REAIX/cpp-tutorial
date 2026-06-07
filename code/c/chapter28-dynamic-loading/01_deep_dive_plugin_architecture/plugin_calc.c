@@ -75,6 +75,12 @@ static int calc_execute(const char *operation, int argc, int *argv, int *result)
         return 0;
     }
     if (strcmp(operation, "pow") == 0) {
+        if (b < 0) {
+            if (g_ctx.on_error) {
+                g_ctx.on_error("calc: negative exponent not supported for integer pow");
+            }
+            return -1;
+        }
         int val = 1;
         for (int i = 0; i < b; i++) {
             val *= a;

@@ -396,39 +396,8 @@ void demo_reactor_server() {
     std::atomic<bool> clients_done{false};
 
     std::thread reactor_thread([&]() {
-        // 限制运行时间
-        int loops = 0;
-        while (loops < 60 && !clients_done) {
-            // 手动实现带超时的单次循环
-            fd_set read_fds;
-            FD_ZERO(&read_fds);
-
-            socket_t max_fd = 0;
-            for (auto& [fd, evts] : std::unordered_map<socket_t, int>{}) {
-                (void)fd; (void)evts;
-            }
-
-            // 直接用Reactor的loop, 但需要能停止
-            // 这里简化: 用短超时多次调用
-            struct timeval tv{};
-            tv.tv_sec = 0;
-            tv.tv_usec = 200000;  // 200ms
-
-            fd_set rfds, wfds;
-            FD_ZERO(&rfds);
-            FD_ZERO(&wfds);
-
-            // 重建fd_set (简化版, 实际应由Reactor内部管理)
-            FD_SET(listen_fd, &rfds);
-            max_fd = listen_fd;
-
-            int ret = ::select(static_cast<int>(max_fd + 1), &rfds, &wfds, nullptr, &tv);
-            if (ret > 0 && FD_ISSET(listen_fd, &rfds)) {
-                acceptor.handle_read(listen_fd);
-            }
-
-            loops++;
-        }
+        // 使用 Reactor 自身的事件循环
+        reactor.loop(200);  // 200ms 超时
     });
 
     // 客户端测试
@@ -470,6 +439,7 @@ void demo_reactor_server() {
 
     client1.join();
     clients_done = true;
+    reactor.stop();  // 通知 reactor 退出事件循环
     reactor_thread.join();
 
     CLOSE_SOCKET(listen_fd);

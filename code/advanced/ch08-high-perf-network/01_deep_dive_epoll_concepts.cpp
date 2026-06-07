@@ -251,17 +251,30 @@ void demo_epoll_style_server() {
                         std::cout << "[服务器] 新连接 (fd=" << client_fd << ")\n";
                     }
                 } else {
-                    // 客户端数据
+                    // 客户端数据 (ET模式必须循环读取直到EAGAIN)
                     char buf[1024];
-                    ssize_t n = ::recv(events[i].data.fd, buf, sizeof(buf) - 1, 0);
-                    if (n <= 0) {
-                        epoll_ctl(epfd, EPOLL_CTL_DEL, events[i].data.fd, nullptr);
-                        CLOSE_SOCKET(events[i].data.fd);
-                        std::cout << "[服务器] 客户端断开\n";
-                    } else {
-                        buf[n] = '\0';
-                        std::cout << "[服务器] 收到: \"" << buf << "\"\n";
-                        ::send(events[i].data.fd, buf, static_cast<int>(n), 0);
+                    while (true) {
+                        ssize_t n = ::recv(events[i].data.fd, buf, sizeof(buf) - 1, 0);
+                        if (n > 0) {
+                            buf[n] = '\0';
+                            std::cout << "[服务器] 收到: \"" << buf << "\"\n";
+                            ::send(events[i].data.fd, buf, static_cast<int>(n), 0);
+                        } else if (n == 0) {
+                            // 对端关闭连接
+                            epoll_ctl(epfd, EPOLL_CTL_DEL, events[i].data.fd, nullptr);
+                            CLOSE_SOCKET(events[i].data.fd);
+                            std::cout << "[服务器] 客户端断开\n";
+                            break;
+                        } else {
+                            // n < 0
+                            if (errno == EAGAIN || errno == EWOULDBLOCK) {
+                                break;  // ET模式: 数据已全部读完
+                            }
+                            epoll_ctl(epfd, EPOLL_CTL_DEL, events[i].data.fd, nullptr);
+                            CLOSE_SOCKET(events[i].data.fd);
+                            std::cout << "[服务器] recv错误, 关闭连接\n";
+                            break;
+                        }
                     }
                 }
             }

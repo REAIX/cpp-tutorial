@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
 
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 # Chapter 0: 编译期计算基础
 add_executable(adv_ch07_00_example_constexpr_basics 00_example_constexpr_basics.cpp)
 add_executable(adv_ch07_00_deep_dive_consteval_constinit 00_deep_dive_consteval_constinit.cpp)

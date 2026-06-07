@@ -69,7 +69,8 @@ public:
         return patch_ <=> other.patch_;
     }
 
-    // == 需要单独定义 (C++20 中 <=> 不自动生成 ==)
+    // 手写 <=> 时, == 需要单独定义
+    // (注意: =default 的 <=> 会自动生成 ==, 无需手写)
     bool operator==(const Version& other) const {
         return major_ == other.major_ && minor_ == other.minor_ && patch_ == other.patch_;
     }

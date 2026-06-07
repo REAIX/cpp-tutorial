@@ -49,9 +49,9 @@ void show_ref_deduction(T& param) {
     if constexpr (std::is_const_v<T>) std::cout << "const ";
     if constexpr (std::is_integral_v<T>) std::cout << "integral";
     else std::cout << "other";
-    std::cout << ", T& = ";
+    std::cout << ", ParamType = ";
     if constexpr (std::is_const_v<T>) std::cout << "const ";
-    std::cout << "int&\n";
+    std::cout << "T&\n";
 }
 
 void demo_template_deduction_by_ref() {

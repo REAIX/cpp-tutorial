@@ -132,6 +132,10 @@ void demo_tcp_server_basic(void) {
         const char *response = "Hello from TCP server!";
         send(client_fd, response, (int)strlen(response), 0);
         printf("发送响应: \"%s\"\n", response);
+    } else if (n == 0) {
+        printf("客户端正常关闭连接\n");
+    } else {
+        printf("recv 错误\n");
     }
 
     close_socket(client_fd);

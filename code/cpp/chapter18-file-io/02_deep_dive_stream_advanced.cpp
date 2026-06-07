@@ -127,6 +127,7 @@ private:
     std::string get_timestamp() {
         auto now = std::chrono::system_clock::now();
         auto now_time = std::chrono::system_clock::to_time_t(now);
+        // 注意: std::localtime 非线程安全! 多线程环境应使用 localtime_r/localtime_s
         std::tm* tm = std::localtime(&now_time);
         char buf[32];
         std::strftime(buf, sizeof(buf), "[%H:%M:%S] ", tm);

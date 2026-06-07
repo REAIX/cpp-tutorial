@@ -129,7 +129,7 @@ void demo_clock_types() {
     std::cout << "   - 通常是 steady_clock 或其别名\n";
     std::cout << "   - 用于微基准测试\n";
     auto hr1 = std::chrono::high_resolution_clock::now();
-    volatile int sum = 0;
+    volatile int sum = 0;  // volatile 防止优化消除, 生产级基准测试建议用 Google Benchmark
     for (int i = 0; i < 1000; i++) sum += i;
     auto hr2 = std::chrono::high_resolution_clock::now();
     auto ns = std::chrono::duration_cast<std::chrono::nanoseconds>(hr2 - hr1);

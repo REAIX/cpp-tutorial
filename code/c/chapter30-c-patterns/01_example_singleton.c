@@ -26,7 +26,9 @@ AppConfig *app_config_get_instance(void) {
     if (!app_config_instance) {
         app_config_instance = (AppConfig *)calloc(1, sizeof(AppConfig));
         if (app_config_instance) {
-            strcpy(app_config_instance->config_path, "/etc/app/config.ini");
+            strncpy(app_config_instance->config_path, "/etc/app/config.ini",
+                     sizeof(app_config_instance->config_path) - 1);
+            app_config_instance->config_path[sizeof(app_config_instance->config_path) - 1] = '\0';
             app_config_instance->log_level = 2;
             app_config_instance->max_connections = 100;
         }
@@ -79,6 +81,8 @@ static CRITICAL_SECTION ts_mutex;
 static int ts_mutex_initialized = 0;
 
 static void ts_ensure_mutex(void) {
+    // 注意: 此函数应在 main() 最开始时调用, 避免竞态条件
+    // 多线程同时调用此函数可能导致 InitializeCriticalSection 被多次执行
     if (!ts_mutex_initialized) {
         InitializeCriticalSection(&ts_mutex);
         ts_mutex_initialized = 1;
@@ -102,7 +106,9 @@ ThreadSafeSingleton *ts_singleton_get_instance(void) {
         if (!ts_instance) {
             ts_instance = (ThreadSafeSingleton *)calloc(1, sizeof(ThreadSafeSingleton));
             if (ts_instance) {
-                strcpy(ts_instance->name, "ThreadSafeSingleton");
+                strncpy(ts_instance->name, "ThreadSafeSingleton",
+                         sizeof(ts_instance->name) - 1);
+                ts_instance->name[sizeof(ts_instance->name) - 1] = '\0';
                 ts_instance->version = 1;
             }
             ts_initialized = 1;

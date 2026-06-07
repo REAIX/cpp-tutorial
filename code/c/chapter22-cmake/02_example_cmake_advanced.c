@@ -30,8 +30,11 @@ void array_init(dynamic_array_t *arr, int initial_capacity) {
 
 void array_push(dynamic_array_t *arr, double value) {
     if (arr->size >= arr->capacity) {
-        arr->capacity *= 2;
-        arr->data = (double *)realloc(arr->data, arr->capacity * sizeof(double));
+        int new_cap = arr->capacity * 2;
+        double *new_data = (double *)realloc(arr->data, new_cap * sizeof(double));
+        if (!new_data) return;  // realloc 失败时保留原数据, 拒绝 push
+        arr->data = new_data;
+        arr->capacity = new_cap;
     }
     arr->data[arr->size++] = value;
 }

@@ -136,7 +136,8 @@ void gvec_sort(GenericVector *v, int (*compare)(const void *, const void *)) {
 }
 
 static int int_cmp(const void *a, const void *b) {
-    return *(const int *)a - *(const int *)b;
+    int ia = *(const int *)a, ib = *(const int *)b;
+    return (ia > ib) - (ia < ib);  // 避免减法溢出
 }
 
 void demo_void_ptr_generic(void) {
@@ -152,7 +153,6 @@ void demo_void_ptr_generic(void) {
     }
 
     gvec_sort(&vi, int_cmp);
-    qsort(vi.data, vi.size, vi.element_size, int_cmp);
 
     printf("排序后:\n");
     for (size_t i = 0; i < gvec_size(&vi); i++) {

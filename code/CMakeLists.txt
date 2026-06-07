@@ -15,6 +15,8 @@ if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang|AppleClang")
     add_compile_options($<$<COMPILE_LANGUAGE:C>:-Wno-pedantic>)
     add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-Wpedantic>)
     add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-Wno-unused-parameter>)
+elseif(MSVC)
+    add_compile_options(/W4)
 endif()
 
 add_subdirectory(c)

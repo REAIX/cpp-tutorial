@@ -289,6 +289,11 @@ template<typename Head, typename... Tail, typename T>
 struct IndexOf<Typelist<Head, Tail...>, T>
     : std::integral_constant<std::size_t, 1 + IndexOf<Typelist<Tail...>, T>::value> {};
 
+// 空列表终止: 类型不存在时返回哨兵值
+template<typename T>
+struct IndexOf<Typelist<>, T>
+    : std::integral_constant<std::size_t, static_cast<std::size_t>(-1)> {};
+
 template<typename List, typename T>
 inline constexpr std::size_t IndexOf_v = IndexOf<List, T>::value;
 

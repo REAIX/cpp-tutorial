@@ -167,7 +167,7 @@ void demo_ordered_vs_unordered_performance() {
     auto test_find = [&](auto& container, const std::string& name) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int i = 0; i < N; i += 10) {
-            volatile auto it = container.find(i);
+            volatile auto it = container.find(i);  // volatile 防止优化消除
         }
         auto end = std::chrono::high_resolution_clock::now();
         return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();

@@ -66,6 +66,7 @@ enum class MessageType : uint16_t {
 /// │  Magic   │ Version │  Flags   │   Type   │  Length  │   Seq    │ Checksum │
 /// │ (2字节)  │ (1字节)  │ (1字节)   │ (2字节)   │ (4字节)  │ (4字节)   │ (4字节)   │
 /// └──────────┴─────────┴──────────┴──────────┴──────────┴──────────┴──────────┘
+#pragma pack(push, 1)
 struct V2Header {
     uint16_t magic;      // 魔数 0xABCD
     uint8_t  version;    // 协议版本
@@ -76,7 +77,7 @@ struct V2Header {
     uint32_t checksum;   // 校验和 (CRC32)
 
     static constexpr uint16_t MAGIC = 0xABCD;
-    static constexpr size_t SIZE = 18;  // 头部总大小
+    static constexpr size_t SIZE = 18;  // 头部总大小 (紧凑排列)
     static constexpr uint8_t CURRENT_VERSION = 2;
 
     void to_network_order() {
@@ -96,6 +97,8 @@ struct V2Header {
         checksum = ntohl(checksum);
     }
 };
+#pragma pack(pop)
+static_assert(sizeof(V2Header) == V2Header::SIZE, "V2Header size mismatch due to padding");
 
 // ============================================================
 // CRC32校验和计算

@@ -93,6 +93,7 @@ struct TlvHeader {
     static constexpr uint16_t MAGIC_VALUE = 0xABCD;
     static constexpr size_t HEADER_SIZE = 12;  // 实际大小
 };
+static_assert(sizeof(TlvHeader) == TlvHeader::HEADER_SIZE, "TlvHeader size mismatch due to padding");
 
 // ============================================================
 // TLV消息类

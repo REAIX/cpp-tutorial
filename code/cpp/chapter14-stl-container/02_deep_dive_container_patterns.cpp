@@ -139,6 +139,7 @@ void demo_flat_map_concept() {
                 auto dist = it - keys_.begin();
                 keys_.insert(it, key);
                 values_.insert(values_.begin() + dist, 0);
+                return values_[dist];  // insert 后 it 失效, 必须用 dist
             }
             return values_[it - keys_.begin()];
         }

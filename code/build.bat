@@ -16,18 +16,19 @@ if "%1"=="help" (
     exit /b 0
 )
 
-if exist build rmdir /s /q build
-mkdir build
+if not exist build mkdir build
 cd build
 
-if defined CMAKE_GENERATOR (
-    cmake .. -G "%CMAKE_GENERATOR%" -DCMAKE_BUILD_TYPE=Debug
-) else if defined VSINSTALLDIR (
-    cmake .. -DCMAKE_BUILD_TYPE=Debug
-) else (
-    cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
+if not exist CMakeCache.txt (
+    if defined CMAKE_GENERATOR (
+        cmake .. -G "%CMAKE_GENERATOR%"
+    ) else if defined VSINSTALLDIR (
+        cmake ..
+    ) else (
+        cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
+    )
 )
-cmake --build . --parallel
+cmake --build . --parallel --config Debug
 
 cd ..
 endlocal

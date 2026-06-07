@@ -158,6 +158,8 @@ void demo_calendar_cpp20_preview() {
     std::cout << "在C++17中模拟部分功能:\n";
     auto now = std::chrono::system_clock::now();
     std::time_t now_time = std::chrono::system_clock::to_time_t(now);
+    // 注意: std::localtime 非线程安全! 多线程环境应使用 localtime_r (POSIX)
+    // 或 localtime_s (MSVC), 或 C++20 的 std::chrono 日历库
     std::tm* local_tm = std::localtime(&now_time);
 
     char buf[32];

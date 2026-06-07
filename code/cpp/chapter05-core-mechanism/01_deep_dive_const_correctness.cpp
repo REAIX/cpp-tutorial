@@ -176,7 +176,7 @@ private:
     mutable int cache_hits_ = 0;
 };
 
-class ThreadSafeCounter {
+class MutableCounter {  // 注意: 不是线程安全的! 仅用于演示 mutable 用法
 public:
     int increment() const {
         // 逻辑 const: 计数不影响对象的"值"

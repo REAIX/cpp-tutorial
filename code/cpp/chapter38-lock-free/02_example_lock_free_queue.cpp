@@ -22,6 +22,11 @@ class LockFreeQueue {
     std::atomic<Node*> head_;
     std::atomic<Node*> tail_;
 
+    // ⚠️ 安全警告: 此 hazard pointer 实现是简化版, 仅供教学演示!
+    // 完整实现需要: (1) 线程本地 hazard slot 分配 (2) enqueue/dequeue 中设置/清除 hazard ptr
+    // 当前版本未在 enqueue/dequeue 中设置 hazard_ptrs, 因此 is_hazard() 始终返回 false,
+    // 多线程下 try_reclaim() 可能删除正在被其他线程访问的节点 (use-after-free)。
+    // 单线程使用安全; 多线程演示时需注意此限制。
     static constexpr int max_hazard = 2;
     static constexpr int hazard_count = 16;
     std::atomic<Node*> hazard_ptrs[hazard_count][max_hazard];

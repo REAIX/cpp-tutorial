@@ -264,7 +264,7 @@ typedef struct {
 static int comp_int_compare(const void *a, const void *b) {
     const ComparableInt *ia = (const ComparableInt *)a;
     const ComparableInt *ib = (const ComparableInt *)b;
-    return ia->value - ib->value;
+    return (ia->value > ib->value) - (ia->value < ib->value);  // 避免减法溢出
 }
 
 static int comp_int_equals(const void *a, const void *b) {

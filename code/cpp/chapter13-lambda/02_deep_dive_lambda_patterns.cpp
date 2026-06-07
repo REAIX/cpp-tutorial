@@ -10,10 +10,10 @@
 #include <memory>
 #include <algorithm>
 
-template<typename T, typename Comparator = std::function<bool(const T&, const T&)>>
+template<typename T, typename Comparator = std::less<T>>
 class SortedVector {
 public:
-    SortedVector(Comparator comp = std::less<T>{}) : comp_(std::move(comp)) {}
+    SortedVector(Comparator comp = Comparator{}) : comp_(std::move(comp)) {}
 
     void insert(const T& value) {
         auto pos = std::lower_bound(data_.begin(), data_.end(), value, comp_);

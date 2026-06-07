@@ -54,6 +54,8 @@ public:
 
     ScopedTimer(const ScopedTimer&) = delete;
     ScopedTimer& operator=(const ScopedTimer&) = delete;
+    ScopedTimer(ScopedTimer&&) = delete;
+    ScopedTimer& operator=(ScopedTimer&&) = delete;
 
 private:
     std::string name_;
@@ -68,7 +70,7 @@ void demo_basic_timer() {
     Timer timer;
 
     std::cout << "执行一些计算...\n";
-    volatile long long sum = 0;
+    volatile long long sum = 0;  // volatile 防止优化消除, 生产级基准测试建议用 Google Benchmark
     for (long long i = 0; i < 10000000; i++) {
         sum += i;
     }
@@ -193,6 +195,7 @@ void demo_date_formatting() {
 
     auto now = std::chrono::system_clock::now();
     std::time_t now_time = std::chrono::system_clock::to_time_t(now);
+    // 注意: std::localtime 非线程安全! 多线程环境应使用 localtime_r/localtime_s
     std::tm* local_tm = std::localtime(&now_time);
 
     char buf[64];
