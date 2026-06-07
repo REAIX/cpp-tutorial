@@ -1,5 +1,5 @@
 # 什么是std::any
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
+> 📖 相关章节：[核心机制](../../02-CPP/05-核心机制.md)
 
 > "std::any is the type-safe successor to void* — it holds any copyable type, but never forgets what it holds." — Nicolai Josuttis
 

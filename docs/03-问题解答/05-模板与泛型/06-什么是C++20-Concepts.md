@@ -1,5 +1,5 @@
 ﻿# 什么是C++20 Concepts
-> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)、[模板进阶](../../02-CPP/11-模板进阶.md)、[Concepts](../../02-CPP/22-Concepts.md)
+> 📖 相关章节：[Concepts](../../02-CPP/22-Concepts.md)
 
 > "Concepts 让编译器的错误信息从天书变成了人话。"
 

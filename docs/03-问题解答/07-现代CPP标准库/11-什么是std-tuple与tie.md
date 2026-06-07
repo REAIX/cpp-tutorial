@@ -1,5 +1,5 @@
 # 什么是std::tuple与tie
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
+> 📖 相关章节：[模板基础](../../02-CPP/10-模板基础.md)
 
 > "A tuple is a fixed-size collection of heterogeneous values — the Swiss Army knife of C++ type machinery." — Stephan T. Lavavej
 

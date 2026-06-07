@@ -1,5 +1,5 @@
 # 什么是std::array与C数组的区别
-> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[STL算法](../../02-CPP/15-STL算法与迭代器.md)、[正则表达式](../../02-CPP/16-正则表达式.md)、[文件操作与文件系统](../../02-CPP/18-文件操作与文件系统.md)
+> 📖 相关章节：[STL容器](../../02-CPP/14-STL容器.md)、[数组](../../01-C语言/05-数组.md)
 
 > "std::array is a C array that grew up — same performance, but it knows its own size and plays well with the STL." — Scott Meyers
 
