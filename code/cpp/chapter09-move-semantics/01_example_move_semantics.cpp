@@ -3,6 +3,7 @@
  *  @description 对应文档: 09-移动语义与完美转发
  */
 
+#include <algorithm>
 #include <iostream>
 #include <string>
 #include <utility>

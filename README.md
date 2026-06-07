@@ -46,14 +46,14 @@
 | 第17章 | [17-编译与链接.md](./docs/01-C语言/17-编译与链接.md) | 编译阶段、符号解析、链接器脚本 | [chapter17](./code/c/chapter17-compile-link/) |
 | 第18章 | [18-静态库.md](./docs/01-C语言/18-静态库.md) | 静态库创建与使用、静态库内部原理 | [chapter18](./code/c/chapter18-static-library/) |
 | 第19章 | [19-动态库与共享库.md](./docs/01-C语言/19-动态库与共享库.md) | 动态链接、动态加载、动态库内部原理 | [chapter19](./code/c/chapter19-dynamic-library/) |
-| 第20章 | [20-GCC与G++编译器.md](./docs/01-C语言/20-GCC与G++编译器.md) | 编译器选项、优化级别、GCC高级用法 | [chapter20](./code/c/chapter21-gcc-g++/) |
-| 第21章 | [21-Makefile与构建系统.md](./docs/01-C语言/21-Makefile与构建系统.md) | Makefile语法、依赖管理、Makefile模式 | [chapter21](./code/c/chapter22-makefile/) |
-| 第22章 | [22-CMake构建系统.md](./docs/01-C语言/22-CMake构建系统.md) | CMake语法、CMakeLists.txt、CMake模式 | [chapter22](./code/c/chapter23-cmake/) |
-| 第23章 | [23-进程与线程.md](./docs/01-C语言/23-进程与线程.md) | fork/exec/pthread/mutex、进程间通信 | [chapter23](./code/c/chapter24-process-thread/) |
-| 第24章 | [24-网络编程基础.md](./docs/01-C语言/24-网络编程基础.md) | Socket编程、TCP/UDP客户端服务端、协议设计 | [chapter24](./code/c/chapter25-network/) |
-| 第25章 | [25-链表与数据结构.md](./docs/01-C语言/25-链表与数据结构.md) | 单链表、双链表、栈、队列、二叉树 | [chapter25](./code/c/chapter26-data-structure/) |
-| 第26章 | [26-排序与查找算法.md](./docs/01-C语言/26-排序与查找算法.md) | 冒泡/快排/归并排序、二分查找、哈希表 | [chapter26](./code/c/chapter27-algorithm/) |
-| 第27章 | [27-C语言面向对象实现-基础.md](./docs/01-C语言/27-C语言面向对象实现-基础.md) | 封装、继承、多态、虚表实现 | [chapter27](./code/c/chapter28-c-oop-basic/) |
+| 第20章 | [20-GCC与G++编译器.md](./docs/01-C语言/20-GCC与G++编译器.md) | 编译器选项、优化级别、GCC高级用法 | [chapter20](./code/c/chapter20-gcc-g++/) |
+| 第21章 | [21-Makefile与构建系统.md](./docs/01-C语言/21-Makefile与构建系统.md) | Makefile语法、依赖管理、Makefile模式 | [chapter21](./code/c/chapter21-makefile/) |
+| 第22章 | [22-CMake构建系统.md](./docs/01-C语言/22-CMake构建系统.md) | CMake语法、CMakeLists.txt、CMake模式 | [chapter22](./code/c/chapter22-cmake/) |
+| 第23章 | [23-进程与线程.md](./docs/01-C语言/23-进程与线程.md) | fork/exec/pthread/mutex、进程间通信 | [chapter23](./code/c/chapter23-process-thread/) |
+| 第24章 | [24-网络编程基础.md](./docs/01-C语言/24-网络编程基础.md) | Socket编程、TCP/UDP客户端服务端、协议设计 | [chapter24](./code/c/chapter24-network/) |
+| 第25章 | [25-链表与数据结构.md](./docs/01-C语言/25-链表与数据结构.md) | 单链表、双链表、栈、队列、二叉树 | [chapter25](./code/c/chapter25-data-structure/) |
+| 第26章 | [26-排序与查找算法.md](./docs/01-C语言/26-排序与查找算法.md) | 冒泡/快排/归并排序、二分查找、哈希表 | [chapter26](./code/c/chapter26-algorithm/) |
+| 第27章 | [27-C语言面向对象实现-基础.md](./docs/01-C语言/27-C语言面向对象实现-基础.md) | 封装、继承、多态、虚表实现 | [chapter27](./code/c/chapter27-c-oop-basic/) |
 
 ### 2. 第二部分：C++ 基础
 
@@ -78,22 +78,22 @@
 | 第16章 | [16-正则表达式.md](./docs/02-CPP/16-正则表达式.md) | regex语法、匹配搜索替换、正则引擎与模式 | [chapter16](./code/cpp/chapter16-regex/) |
 | 第17章 | [17-日期时间库.md](./docs/02-CPP/17-日期时间库.md) | chrono基础/高级、时钟、计时器 | [chapter17](./code/cpp/chapter17-chrono/) |
 | 第18章 | [18-文件操作与文件系统.md](./docs/02-CPP/18-文件操作与文件系统.md) | 文件流、文件系统、流操作与高级模式 | [chapter18](./code/cpp/chapter18-file-io/) |
-| 第19章 | [19-C++11新特性.md](./docs/02-CPP/19-C++11新特性.md) | auto、右值引用、智能指针、Lambda、核心与库特性 | [chapter19](./code/cpp/chapter20-cpp11/) |
-| 第20章 | [20-C++14新特性.md](./docs/02-CPP/20-C++14新特性.md) | 返回类型推导、泛型Lambda、make_unique | [chapter20](./code/cpp/chapter21-cpp14/) |
-| 第21章 | [21-C++17新特性.md](./docs/02-CPP/21-C++17新特性.md) | 结构化绑定、optional、variant、string_view | [chapter21](./code/cpp/chapter22-cpp17/) |
-| 第22章 | [22-Concepts.md](./docs/02-CPP/22-Concepts.md) | 约束定义、requires子句、自定义概念、概念与模板 | [chapter22](./code/cpp/chapter23-concepts/) |
-| 第23章 | [23-Ranges.md](./docs/02-CPP/23-Ranges.md) | 视图组合、管道操作、自定义视图、范围算法 | [chapter23](./code/cpp/chapter24-ranges/) |
-| 第24章 | [24-C++20与23新特性.md](./docs/02-CPP/24-C++20与23新特性.md) | Concepts、Ranges、三向比较、span、format、expected、print | [chapter24](./code/cpp/chapter25-cpp20/) |
-| 第25章 | [25-协程.md](./docs/02-CPP/25-协程.md) | co_await/co_yield/co_return、Generator、Task | [chapter25](./code/cpp/chapter26-coroutine/) |
-| 第26章 | [26-模块.md](./docs/02-CPP/26-模块.md) | module/export/import、模块分区、模块迁移 | [chapter26](./code/cpp/chapter27-modules/) |
-| 第27章 | [27-多线程基础.md](./docs/02-CPP/27-多线程基础.md) | 线程创建/管理/参数、线程模式与陷阱 | [chapter27](./code/cpp/chapter29-thread-basic/) |
-| 第28章 | [28-线程同步.md](./docs/02-CPP/28-线程同步.md) | 互斥量、条件变量、读写锁、同步模式 | [chapter28](./code/cpp/chapter30-thread-sync/) |
-| 第29章 | [29-原子操作与异步编程.md](./docs/02-CPP/29-原子操作与异步编程.md) | atomic、future/promise、async、异步模式 | [chapter29](./code/cpp/chapter31-atomic-async/) |
-| 第30章 | [30-线程池实现.md](./docs/02-CPP/30-线程池实现.md) | 线程池设计、任务队列、线程池模式 | [chapter30](./code/cpp/chapter34-thread-pool/) |
-| 第31章 | [31-网络编程.md](./docs/02-CPP/31-网络编程.md) | Socket编程、TCP/UDP、网络模式与高级应用 | [chapter31](./code/cpp/chapter35-network/) |
-| 第32章 | [32-序列化与日志.md](./docs/02-CPP/32-序列化与日志.md) | JSON/二进制序列化、日志框架设计 | [chapter32](./code/cpp/chapter36-serialization/) |
-| 第33章 | [33-包管理工具.md](./docs/02-CPP/33-包管理工具.md) | vcpkg、Conan、CMake集成、依赖管理 | [chapter33](./code/cpp/chapter37-package-manager/) |
-| 第34章 | [34-实战案例.md](./docs/02-CPP/34-实战案例.md) | 项目实战、代码走读、职业成长 | [chapter34](./code/cpp/chapter38-practice/) |
+| 第19章 | [19-C++11新特性.md](./docs/02-CPP/19-C++11新特性.md) | auto、右值引用、智能指针、Lambda、核心与库特性 | [chapter19](./code/cpp/chapter19-cpp11/) |
+| 第20章 | [20-C++14新特性.md](./docs/02-CPP/20-C++14新特性.md) | 返回类型推导、泛型Lambda、make_unique | [chapter20](./code/cpp/chapter20-cpp14/) |
+| 第21章 | [21-C++17新特性.md](./docs/02-CPP/21-C++17新特性.md) | 结构化绑定、optional、variant、string_view | [chapter21](./code/cpp/chapter21-cpp17/) |
+| 第22章 | [22-Concepts.md](./docs/02-CPP/22-Concepts.md) | 约束定义、requires子句、自定义概念、概念与模板 | [chapter22](./code/cpp/chapter22-concepts/) |
+| 第23章 | [23-Ranges.md](./docs/02-CPP/23-Ranges.md) | 视图组合、管道操作、自定义视图、范围算法 | [chapter23](./code/cpp/chapter23-ranges/) |
+| 第24章 | [24-C++20与23新特性.md](./docs/02-CPP/24-C++20与23新特性.md) | Concepts、Ranges、三向比较、span、format、expected、print | [chapter24](./code/cpp/chapter24-cpp20/) |
+| 第25章 | [25-协程.md](./docs/02-CPP/25-协程.md) | co_await/co_yield/co_return、Generator、Task | [chapter25](./code/cpp/chapter25-coroutine/) |
+| 第26章 | [26-模块.md](./docs/02-CPP/26-模块.md) | module/export/import、模块分区、模块迁移 | [chapter26](./code/cpp/chapter26-modules/) |
+| 第27章 | [27-多线程基础.md](./docs/02-CPP/27-多线程基础.md) | 线程创建/管理/参数、线程模式与陷阱 | [chapter27](./code/cpp/chapter27-thread-basic/) |
+| 第28章 | [28-线程同步.md](./docs/02-CPP/28-线程同步.md) | 互斥量、条件变量、读写锁、同步模式 | [chapter28](./code/cpp/chapter28-thread-sync/) |
+| 第29章 | [29-原子操作与异步编程.md](./docs/02-CPP/29-原子操作与异步编程.md) | atomic、future/promise、async、异步模式 | [chapter29](./code/cpp/chapter29-atomic-async/) |
+| 第30章 | [30-线程池实现.md](./docs/02-CPP/30-线程池实现.md) | 线程池设计、任务队列、线程池模式 | [chapter30](./code/cpp/chapter30-thread-pool/) |
+| 第31章 | [31-网络编程.md](./docs/02-CPP/31-网络编程.md) | Socket编程、TCP/UDP、网络模式与高级应用 | [chapter31](./code/cpp/chapter31-network/) |
+| 第32章 | [32-序列化与日志.md](./docs/02-CPP/32-序列化与日志.md) | JSON/二进制序列化、日志框架设计 | [chapter32](./code/cpp/chapter32-serialization/) |
+| 第33章 | [33-包管理工具.md](./docs/02-CPP/33-包管理工具.md) | vcpkg、Conan、CMake集成、依赖管理 | [chapter33](./code/cpp/chapter33-package-manager/) |
+| 第34章 | [34-实战案例.md](./docs/02-CPP/34-实战案例.md) | 项目实战、代码走读、职业成长 | [chapter34](./code/cpp/chapter34-practice/) |
 
 ### 3. 第三部分：工程实践与开发环境
 
@@ -451,20 +451,20 @@ code/
 │   ├── chapter17-compile-link/       # 编译与链接
 │   ├── chapter18-static-library/     # 静态库
 │   ├── chapter19-dynamic-library/    # 动态库与共享库
-│   ├── chapter20-dynamic-loading/   # 动态库加载方式
-│   ├── chapter21-gcc-g++/            # GCC与G++编译器
-│   ├── chapter22-makefile/           # Makefile与构建系统
-│   ├── chapter23-cmake/              # CMake构建系统
-│   ├── chapter24-process-thread/     # 进程与线程
-│   ├── chapter25-network/            # 网络编程基础
-│   ├── chapter26-data-structure/     # 链表与数据结构
-│   ├── chapter27-algorithm/          # 排序与查找算法
-│   ├── chapter28-c-oop-basic/        # C语言面向对象-基础
+│   ├── chapter20-gcc-g++/            # GCC与G++编译器
+│   ├── chapter21-makefile/           # Makefile与构建系统
+│   ├── chapter22-cmake/              # CMake构建系统
+│   ├── chapter23-process-thread/     # 进程与线程
+│   ├── chapter24-network/            # 网络编程基础
+│   ├── chapter25-data-structure/     # 链表与数据结构
+│   ├── chapter26-algorithm/          # 排序与查找算法
+│   ├── chapter27-c-oop-basic/        # C语言面向对象-基础
+│   ├── chapter28-dynamic-loading/    # 动态库加载方式
 │   ├── chapter29-c-oop-advanced/     # C语言面向对象-进阶
 │   ├── chapter30-c-patterns/         # C语言设计模式
 │   └── CMakeLists.txt
 │
-├── cpp/                              # C++示例代码（35章，163个源文件）
+├── cpp/                              # C++示例代码（39章，163个源文件）
 │   ├── chapter00-cpp-overview/       # C++概述
 │   ├── chapter01-basics/             # 基础特性
 │   ├── chapter02-namespace/          # 命名空间与编码规范
@@ -484,26 +484,26 @@ code/
 │   ├── chapter16-regex/              # 正则表达式
 │   ├── chapter17-chrono/             # 日期时间库
 │   ├── chapter18-file-io/            # 文件操作与文件系统
-│   ├── chapter19-filesystem/         # 文件系统库
-│   ├── chapter20-cpp11/              # C++11新特性
-│   ├── chapter21-cpp14/              # C++14新特性
-│   ├── chapter22-cpp17/              # C++17新特性
-│   ├── chapter23-concepts/           # Concepts
-│   ├── chapter24-ranges/             # Ranges
-│   ├── chapter25-cpp20/              # C++20与23新特性
-│   ├── chapter26-coroutine/          # 协程
-│   ├── chapter27-modules/            # 模块
-│   ├── chapter28-cpp23/              # C++23新特性
-│   ├── chapter29-thread-basic/       # 多线程基础
-│   ├── chapter30-thread-sync/        # 线程同步
-│   ├── chapter31-atomic-async/       # 原子操作与异步编程
-│   ├── chapter32-memory-model/       # C++内存模型
-│   ├── chapter33-lock-free/          # 无锁编程
-│   ├── chapter34-thread-pool/        # 线程池实现
-│   ├── chapter35-network/            # 网络编程
-│   ├── chapter36-serialization/      # 序列化与日志
-│   ├── chapter37-package-manager/    # 包管理工具
-│   ├── chapter38-practice/           # 实战案例
+│   ├── chapter19-cpp11/              # C++11新特性
+│   ├── chapter20-cpp14/              # C++14新特性
+│   ├── chapter21-cpp17/              # C++17新特性
+│   ├── chapter22-concepts/           # Concepts
+│   ├── chapter23-ranges/             # Ranges
+│   ├── chapter24-cpp20/              # C++20与23新特性
+│   ├── chapter25-coroutine/          # 协程
+│   ├── chapter26-modules/            # 模块
+│   ├── chapter27-thread-basic/       # 多线程基础
+│   ├── chapter28-thread-sync/        # 线程同步
+│   ├── chapter29-atomic-async/       # 原子操作与异步编程
+│   ├── chapter30-thread-pool/        # 线程池实现
+│   ├── chapter31-network/            # 网络编程
+│   ├── chapter32-serialization/      # 序列化与日志
+│   ├── chapter33-package-manager/    # 包管理工具
+│   ├── chapter34-practice/           # 实战案例
+│   ├── chapter35-filesystem/         # 文件系统库
+│   ├── chapter36-cpp23/              # C++23新特性
+│   ├── chapter37-memory-model/       # C++内存模型
+│   ├── chapter38-lock-free/          # 无锁编程
 │   └── CMakeLists.txt
 │
 ├── advanced/                         # 高级专题示例代码

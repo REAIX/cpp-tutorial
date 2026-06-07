@@ -30,7 +30,7 @@ struct Generator {
 
     Generator(std::coroutine_handle<promise_type> h) : handle(h) {}
     ~Generator() {
-        if (handle && !handle.done()) handle.destroy();
+        if (handle) handle.destroy();
     }
 
     Generator(const Generator&) = delete;
@@ -85,7 +85,7 @@ struct Task {
 
     Task(std::coroutine_handle<promise_type> h) : handle(h) {}
     ~Task() {
-        if (handle && !handle.done()) handle.destroy();
+        if (handle) handle.destroy();
     }
 
     Task(const Task&) = delete;
